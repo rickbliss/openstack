@@ -1,0 +1,25 @@
+Guru meditation now registers SIGUSR1 and SIGUSR2 by default for backward compatibility. SIGUSR1 will no longer be registered in a future release, so please use SIGUSR2 to generate reports.
+usage: neutron-lbaasv2-agent [-h] [--config-dir DIR] [--config-file PATH]
+                             [--debug] [--log-config-append PATH]
+                             [--log-date-format DATE_FORMAT]
+                             [--log-dir LOG_DIR] [--log-file PATH] [--nodebug]
+                             [--nouse-syslog] [--noverbose]
+                             [--nowatch-log-file] [--state_path STATE_PATH]
+                             [--syslog-log-facility SYSLOG_LOG_FACILITY]
+                             [--use-syslog] [--verbose] [--version]
+                             [--watch-log-file]
+neutron-lbaasv2-agent: error: unrecognized arguments: i
+Guru meditation now registers SIGUSR1 and SIGUSR2 by default for backward compatibility. SIGUSR1 will no longer be registered in a future release, so please use SIGUSR2 to generate reports.
+usage: neutron-lbaasv2-agent [-h] [--config-dir DIR] [--config-file PATH]
+                             [--debug] [--log-config-append PATH]
+                             [--log-date-format DATE_FORMAT]
+                             [--log-dir LOG_DIR] [--log-file PATH] [--nodebug]
+                             [--nouse-syslog] [--noverbose]
+                             [--nowatch-log-file] [--state_path STATE_PATH]
+                             [--syslog-log-facility SYSLOG_LOG_FACILITY]
+                             [--use-syslog] [--verbose] [--version]
+                             [--watch-log-file]
+neutron-lbaasv2-agent: error: unrecognized arguments: i
+Guru meditation now registers SIGUSR1 and SIGUSR2 by default for backward compatibility. SIGUSR1 will no longer be registered in a future release, so please use SIGUSR2 to generate reports.
+/usr/lib/python2.7/site-packages/oslo_messaging/rpc/server.py:200: FutureWarning: The access_policy argument is changing its default value to <class 'oslo_messaging.rpc.dispatcher.DefaultRPCAccessPolicy'> in version '?', please update the code to explicitly set None as the value: access_policy defaults to LegacyRPCAccessPolicy which exposes private methods. Explicitly set access_policy to DefaultRPCAccessPolicy or ExplicitRPCAccessPolicy.
+  access_policy)

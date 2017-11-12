@@ -1,0 +1,4 @@
+[Nova]
+vendor = RDO
+product = OpenStack Compute
+package = 2.el7
