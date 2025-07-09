@@ -1,0 +1,10 @@
+# Ignore any file with "password" or "keyring" in the name
+*password*
+*keyring*
+*authkey*
+*pem*
+*key*
+ansible.log
+# For certificates directory - track the directory but ignore all files
+certificates/*
+!certificates/.gitkeep
