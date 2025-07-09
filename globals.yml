@@ -66,7 +66,7 @@ enable_fluentd: "no"
 # ============================================================================
 # OCTAVIA LOAD BALANCER CONFIGURATION
 # ============================================================================
-enable_octavia: "no"
+enable_octavia: "yes"
 octavia_auto_configure: "yes"
 octavia_amp_flavor:
   name: "amphora"
