@@ -3,6 +3,16 @@
 ## Overview
 This directory contains the configuration and operational files for an OpenStack deployment managed by Kolla-Ansible. This deployment provides a complete cloud infrastructure platform with compute, storage, networking, and additional services.
 
+## Documentation Links
+- [OpenStack Docs: 2025.1] (https://docs.openstack.org/2025.1/projects.html)
+
+### Common Issues
+- **Deployment**: 
+  - Horizon doesn't like to come up if backed services are broken i.e Neutron wasn't happy with my ml2
+  - Octavia won't auto deploy if neutron is down
+- **Service Communication**: Verify network connectivity
+- **Storage Issues**: Check Ceph cluster health
+- **Authentication**: Verify keystone services
 
 ### Core Services
 - **[Nova](config/nova/README.md)** - Compute service managing virtual machines
@@ -17,7 +27,6 @@ This directory contains the configuration and operational files for an OpenStack
 ### High Availability (BROKEN RIGHT NOW)
 - **[HACluster Corosync](config/hacluster-corosync/README.md)** - Cluster messaging layer
 - **[HACluster Pacemaker](config/hacluster-pacemaker/README.md)** - Resource management
-
 
 ## Storage Backend
 
@@ -56,9 +65,10 @@ kolla-ansible -i multinode upgrade
 
 # Post-deployment setup
 kolla-ansible -i multinode post-deploy
-```
+
 # Destroy services
 kolla-ansible -i multinode destroy --include-images --include-dev -v
+```
 
 ### Configuration Updates
 1. Modify `globals.yml` for global changes
@@ -78,12 +88,6 @@ podman ps | grep <service-name>
 # View service logs
 podman logs <container-name>
 ```
-
-### Common Issues
-- **Certificate Expiry**: Check certificate validity dates
-- **Service Communication**: Verify network connectivity
-- **Storage Issues**: Check Ceph cluster health
-- **Authentication**: Verify keystone services
 
 ### Log Locations
 - **Deployment Logs**: `/etc/kolla/ansible.log`
@@ -134,32 +138,11 @@ kolla-ansible -i multinode mariadb_recovery
 
 ## Maintenance
 
-### Regular Tasks
-- [ ] Monitor certificate expiration dates
-- [ ] Update system packages
-- [ ] Check storage capacity
-- [ ] Review security logs
-- [ ] Backup configurations
-
-### Scheduled Maintenance
-- **Monthly**: Review and update configurations
-- **Quarterly**: Security audit and certificate renewal
-- **Annually**: Major version upgrades
-
-## Documentation Links
-
 
 ### Community Resources
 - [OpenStack Mailing Lists](https://lists.openstack.org/)
 - [Kolla IRC Channel](https://webchat.oftc.net/?channels=openstack-kolla)
 - [OpenStack Forums](https://ask.openstack.org/)
-
-### Emergency Contacts
-- **System Administrator**: [Your contact information]
-- **OpenStack Team**: [Team contact information]
-- **On-Call Support**: [Emergency contact information]
-
----
 
 **Deployment Information**
 - **Environment**: Production/Staging/Development
