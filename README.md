@@ -3,16 +3,7 @@
 ## Overview
 This directory contains the configuration and operational files for an OpenStack deployment managed by Kolla-Ansible. This deployment provides a complete cloud infrastructure platform with compute, storage, networking, and additional services.
 
-## Documentation Links
-- [OpenStack Docs: 2025.1] (https://docs.openstack.org/2025.1/projects.html)
 
-### Common Issues
-- **Deployment**: 
-  - Horizon doesn't like to come up if backed services are broken i.e Neutron wasn't happy with my ml2
-  - Octavia won't auto deploy if neutron is down
-- **Service Communication**: Verify network connectivity
-- **Storage Issues**: Check Ceph cluster health
-- **Authentication**: Verify keystone services
 
 ### Core Services
 - **[Nova](config/nova/README.md)** - Compute service managing virtual machines
@@ -27,6 +18,7 @@ This directory contains the configuration and operational files for an OpenStack
 ### High Availability (BROKEN RIGHT NOW)
 - **[HACluster Corosync](config/hacluster-corosync/README.md)** - Cluster messaging layer
 - **[HACluster Pacemaker](config/hacluster-pacemaker/README.md)** - Resource management
+
 
 ## Storage Backend
 
@@ -66,9 +58,6 @@ kolla-ansible -i multinode upgrade
 # Post-deployment setup
 kolla-ansible -i multinode post-deploy
 
-# Destroy services
-kolla-ansible -i multinode destroy --include-images --include-dev -v
-```
 
 ### Configuration Updates
 1. Modify `globals.yml` for global changes
@@ -155,4 +144,4 @@ kolla-ansible -i multinode mariadb_recovery
 - Always backup configurations before making changes
 - Test changes in a development environment first
 - Follow change management procedures for production updates
-- Monitor service health after any configuration changes
+
