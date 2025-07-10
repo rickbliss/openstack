@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # OpenStack Cloud Seeding Script
-# This script sets up common OpenStack resources including images, flavors, networks, and routers
+# This script sets up common OpenStack resources including images, flavors, networks, routers, and volume types
 # Usage: ./seed_openstack.sh [setup|cleanup|status|testvm]
 #source /opt/kolla-venv/bin/activate
 #source kolla-ansible post-deploy -i /etc/kolla/multinode
@@ -41,6 +41,12 @@ declare -A FLAVORS=(
     ["m1.medium"]="2:4096:40"
     ["m1.large"]="4:8192:80"
     ["m1.xlarge"]="8:16384:160"
+)
+
+# Volume Type Configuration
+declare -A VOLUME_TYPES=(
+    ["SSD"]="ssd-rbd"
+    ["HDD"]="hdd-rbd"
 )
 
 # Security Group Configuration
@@ -83,6 +89,11 @@ check_prerequisites() {
         exit 1
     fi
     
+    if ! command_exists qemu-img; then
+        log "ERROR" "qemu-img not found. Please install qemu-utils or qemu-img"
+        exit 1
+    fi
+    
     # Check if OpenStack credentials are sourced
     if [[ -z "$OS_AUTH_URL" ]]; then
         log "ERROR" "OpenStack credentials not found. Please source your openrc file first"
@@ -95,20 +106,64 @@ check_prerequisites() {
 # Initialize state tracking
 init_state() {
     if [[ ! -f "$STATE_FILE" ]]; then
-        echo '{"images":[],"flavors":[],"networks":[],"subnets":[],"routers":[],"security_groups":[],"test_vms":[],"quotas_updated":[]}' > "$STATE_FILE"
+        echo '{"images":[],"flavors":[],"networks":[],"subnets":[],"routers":[],"security_groups":[],"test_vms":[],"quotas_updated":[],"volume_types":[]}' > "$STATE_FILE"
     fi
+    
+    # Update image properties for existing images
     for img in $(openstack image list -f value -c ID); do
-  echo "Updating properties on image $img..."
-  openstack image set \
-    --property hw_scsi_model=virtio-scsi \
-    --property hw_disk_bus=scsi \
-    --property hw_qemu_guest_agent=yes \
-    --property os_require_quiesce=yes \
-    "$img"
-done
-
+        echo "Updating properties on image $img..."
+        openstack image set \
+            --property hw_scsi_model=virtio-scsi \
+            --property hw_disk_bus=scsi \
+            --property hw_qemu_guest_agent=yes \
+            --property os_require_quiesce=yes \
+            "$img"
+    done
 }
 
+# Create volume types
+create_volume_types() {
+    log "INFO" "Creating volume types..."
+    
+    # Create SSD volume type
+    if openstack volume type show "SSD" >/dev/null 2>&1; then
+        log "INFO" "Volume type 'SSD' already exists"
+    else
+        log "INFO" "Creating SSD volume type"
+        local ssd_type_id=$(openstack volume type create SSD --public -f value -c id)
+        if [[ -n "$ssd_type_id" ]]; then
+            openstack volume type set --property volume_backend_name=ssd-rbd SSD
+            log "INFO" "Successfully created SSD volume type (ID: $ssd_type_id)"
+            add_to_state "volume_types" "$ssd_type_id" "SSD"
+        else
+            log "ERROR" "Failed to create SSD volume type"
+        fi
+    fi
+    
+    # Create HDD volume type
+    if openstack volume type show "HDD" >/dev/null 2>&1; then
+        log "INFO" "Volume type 'HDD' already exists"
+    else
+        log "INFO" "Creating HDD volume type"
+        local hdd_type_id=$(openstack volume type create HDD --public -f value -c id)
+        if [[ -n "$hdd_type_id" ]]; then
+            openstack volume type set --property volume_backend_name=hdd-rbd HDD
+            log "INFO" "Successfully created HDD volume type (ID: $hdd_type_id)"
+            add_to_state "volume_types" "$hdd_type_id" "HDD"
+        else
+            log "ERROR" "Failed to create HDD volume type"
+        fi
+    fi
+    
+    # Update DEFAULT volume type to use ssd-rbd
+    if openstack volume type show "__DEFAULT__" >/dev/null 2>&1; then
+        log "INFO" "Updating __DEFAULT__ volume type to use ssd-rbd backend"
+        openstack volume type set --property volume_backend_name=ssd-rbd __DEFAULT__
+        log "INFO" "Successfully updated __DEFAULT__ volume type"
+    else
+        log "WARNING" "__DEFAULT__ volume type not found - this may be normal depending on your OpenStack configuration"
+    fi
+}
 
 # Create security group
 create_security_group() {
@@ -264,7 +319,95 @@ download_image() {
     fi
 }
 
-# Upload image to Glance
+# Convert image from qcow2 to raw format
+convert_image() {
+    local name=$1
+    local url=$2
+    local filename=$(basename "$url")
+    local qcow2_filepath="${IMAGES_DIR}/${filename}"
+    local raw_filename="${filename%.*}.raw"
+    local raw_filepath="${IMAGES_DIR}/${raw_filename}"
+    
+    # Check if raw image already exists
+    if [[ -f "$raw_filepath" ]]; then
+        log "INFO" "Raw image already exists: $raw_filepath"
+        # Verify it's actually a raw image
+        local file_type=$(file "$raw_filepath" | grep -o "raw disk image" || echo "unknown")
+        log "INFO" "File type verification: $file_type"
+        return 0
+    fi
+    
+    # Check if qcow2 source exists
+    if [[ ! -f "$qcow2_filepath" ]]; then
+        log "ERROR" "Source qcow2 image not found: $qcow2_filepath"
+        return 1
+    fi
+    
+    log "INFO" "Converting $name from qcow2 to raw format..."
+    log "INFO" "Source: $qcow2_filepath"
+    log "INFO" "Target: $raw_filepath"
+    
+    # Verify source is qcow2
+    local source_type=$(qemu-img info "$qcow2_filepath" | grep "file format:" | awk '{print $3}')
+    log "INFO" "Source file format detected: $source_type"
+    
+    # Convert image using qemu-img with verbose output
+    log "INFO" "Running: qemu-img convert -f qcow2 -O raw '$qcow2_filepath' '$raw_filepath'"
+    if qemu-img convert -f qcow2 -O raw "$qcow2_filepath" "$raw_filepath"; then
+        log "INFO" "Conversion completed successfully"
+        
+        # Verify the converted file
+        if [[ -f "$raw_filepath" ]]; then
+            local target_type=$(qemu-img info "$raw_filepath" | grep "file format:" | awk '{print $3}')
+            log "INFO" "Target file format verified: $target_type"
+            
+            # Show file sizes for verification
+            local qcow2_size=$(du -h "$qcow2_filepath" | cut -f1)
+            local raw_size=$(du -h "$raw_filepath" | cut -f1)
+            log "INFO" "Image sizes - qcow2: $qcow2_size, raw: $raw_size"
+            
+            if [[ "$target_type" == "raw" ]]; then
+                log "INFO" "Successfully converted $name to raw format"
+                return 0
+            else
+                log "ERROR" "Conversion verification failed - target is not raw format: $target_type"
+                return 1
+            fi
+        else
+            log "ERROR" "Converted file not found after conversion: $raw_filepath"
+            return 1
+        fi
+    else
+        log "ERROR" "qemu-img convert command failed for $name"
+        return 1
+    fi
+}
+
+# Convert all downloaded images to raw format
+convert_all_images() {
+    log "INFO" "Converting all downloaded images to raw format..."
+    
+    local conversion_failed=0
+    
+    for name in "${!IMAGES[@]}"; do
+        url="${IMAGES[$name]}"
+        log "INFO" "Processing conversion for: $name"
+        
+        if ! convert_image "$name" "$url"; then
+            log "ERROR" "Failed to convert image: $name"
+            conversion_failed=1
+        fi
+    done
+    
+    if [[ $conversion_failed -eq 1 ]]; then
+        log "ERROR" "Some image conversions failed. Raw format is required for upload."
+        log "ERROR" "Please check the conversion errors above and resolve them before proceeding."
+        return 1
+    else
+        log "INFO" "All image conversions completed successfully"
+        return 0
+    fi
+}
 upload_image() {
     local name=$1
     local url=$2
@@ -522,11 +665,29 @@ setup() {
     log "INFO" "Setting unlimited quotas..."
     set_unlimited_quotas
     
+    # Create volume types
+    log "INFO" "Creating volume types..."
+    create_volume_types
+    
     # Download and upload images
     log "INFO" "Processing images..."
     for name in "${!IMAGES[@]}"; do
         url="${IMAGES[$name]}"
         download_image "$name" "$url"
+    done
+    
+    # Convert all images to raw format
+    log "INFO" "Converting images to raw format..."
+    if ! convert_all_images; then
+        log "ERROR" "Image conversion failed. Cannot proceed with upload."
+        log "ERROR" "All images must be in raw format for upload to OpenStack."
+        exit 1
+    fi
+    
+    # Upload all images
+    log "INFO" "Uploading images to OpenStack..."
+    for name in "${!IMAGES[@]}"; do
+        url="${IMAGES[$name]}"
         upload_image "$name" "$url"
     done
     
@@ -632,6 +793,21 @@ cleanup() {
         if openstack security group show "$sg_id" >/dev/null 2>&1; then
             openstack security group delete "$sg_id"
             log "INFO" "Deleted security group: $sg_id"
+        fi
+    done
+    
+    # Delete volume types (but not __DEFAULT__)
+    log "INFO" "Deleting volume types..."
+    for vt_id in $(get_from_state "volume_types"); do
+        if openstack volume type show "$vt_id" >/dev/null 2>&1; then
+            local vt_name=$(openstack volume type show "$vt_id" -f value -c name 2>/dev/null)
+            # Don't delete the __DEFAULT__ volume type
+            if [[ "$vt_name" != "__DEFAULT__" ]]; then
+                openstack volume type delete "$vt_id"
+                log "INFO" "Deleted volume type: $vt_name (ID: $vt_id)"
+            else
+                log "INFO" "Skipping deletion of __DEFAULT__ volume type"
+            fi
         fi
     done
     
@@ -810,7 +986,7 @@ usage() {
     echo "Usage: $0 [setup|cleanup|status|testvm]"
     echo ""
     echo "Commands:"
-    echo "  setup   - Download images, create flavors, networks, routers, security groups, set quotas"
+    echo "  setup   - Download images, convert to raw format, create flavors, networks, routers, security groups, volume types, set quotas"
     echo "  cleanup - Remove all created resources including test VMs"
     echo "  status  - Show current state of created resources"
     echo "  testvm  - Launch test VMs on all available hypervisors"
@@ -836,6 +1012,9 @@ status() {
     
     echo "Flavors:"
     jq -r '.flavors[] | "  - \(.name) (ID: \(.id))"' "$STATE_FILE"
+    
+    echo "Volume Types:"
+    jq -r '.volume_types[] | "  - \(.name) (ID: \(.id))"' "$STATE_FILE"
     
     echo "Networks:"
     jq -r '.networks[] | "  - \(.name) (ID: \(.id))"' "$STATE_FILE"
