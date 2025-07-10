@@ -1,0 +1,46 @@
+Issue: Unable to retreive Load balancers in horizon
+    - https://docs.openstack.org/octavia/2025.1/configuration/policy.html
+    - role load-balancer_admin to admin
+
+
+      openstack role add --project service@Default --user admin@Default load-balancer_admin
+    
+    That didnt do it.
+
+rick@rick-laptop:~$ for h in bc00 bc01 bc02 bc03 bc04; 
+  do 
+    echo "Listing Octavia Containers on $h"
+    ssh "$h" "sudo podman ps | grep octavia"
+
+  done
+echo "Done."    
+Listing Octavia Containers on bc00
+617a48ecabb9  quay.io/openstack.kolla/octavia-api:2025.1-ubuntu-noble                                    kolla_start           2 hours ago  Up 2 hours (healthy)              octavia_api
+11307e656581  quay.io/openstack.kolla/octavia-driver-agent:2025.1-ubuntu-noble                           kolla_start           2 hours ago  Up 2 hours                        octavia_driver_agent
+f2713d885bf8  quay.io/openstack.kolla/octavia-health-manager:2025.1-ubuntu-noble                         kolla_start           2 hours ago  Up 2 hours (healthy)              octavia_health_manager
+3dbf5fbab063  quay.io/openstack.kolla/octavia-housekeeping:2025.1-ubuntu-noble                           kolla_start           2 hours ago  Up 2 hours (healthy)              octavia_housekeeping
+5065bec907b9  quay.io/openstack.kolla/octavia-worker:2025.1-ubuntu-noble                                 kolla_start           2 hours ago  Up 2 hours (healthy)              octavia_worker
+Listing Octavia Containers on bc01
+Listing Octavia Containers on bc02
+0c352471da0b  quay.io/openstack.kolla/octavia-api:2025.1-ubuntu-noble                 kolla_start  2 hours ago  Up 2 hours (healthy)              octavia_api
+ed4d99f009e6  quay.io/openstack.kolla/octavia-driver-agent:2025.1-ubuntu-noble        kolla_start  2 hours ago  Up 2 hours                        octavia_driver_agent
+6ca3cb9fae79  quay.io/openstack.kolla/octavia-health-manager:2025.1-ubuntu-noble      kolla_start  2 hours ago  Up 2 hours (healthy)              octavia_health_manager
+eb9e91a627cf  quay.io/openstack.kolla/octavia-housekeeping:2025.1-ubuntu-noble        kolla_start  2 hours ago  Up 2 hours (healthy)              octavia_housekeeping
+d1e635a6e00d  quay.io/openstack.kolla/octavia-worker:2025.1-ubuntu-noble              kolla_start  2 hours ago  Up 2 hours (healthy)              octavia_worker
+Listing Octavia Containers on bc03
+4c148791d67b  quay.io/openstack.kolla/octavia-api:2025.1-ubuntu-noble                                    kolla_start           2 hours ago   Up 2 hours (healthy)              octavia_api
+bf8d36de050f  quay.io/openstack.kolla/octavia-driver-agent:2025.1-ubuntu-noble                           kolla_start           2 hours ago   Up 2 hours                        octavia_driver_agent
+3961bbcac946  quay.io/openstack.kolla/octavia-health-manager:2025.1-ubuntu-noble                         kolla_start           2 hours ago   Up 2 hours (healthy)              octavia_health_manager
+811a082f86d7  quay.io/openstack.kolla/octavia-housekeeping:2025.1-ubuntu-noble                           kolla_start           2 hours ago   Up 2 hours (healthy)              octavia_housekeeping
+1d62f984970a  quay.io/openstack.kolla/octavia-worker:2025.1-ubuntu-noble                                 kolla_start           2 hours ago   Up 2 hours (healthy)              octavia_worker
+Listing Octavia Containers on bc04
+Done.
+
+
+horizon_error.log Internal Server Error: /api/lbaas/loadbalancers/
+
+https://docs.openstack.org/octavia/latest/configuration/policy.html
+
+https://docs.openstack.org/octavia/latest/admin/providers/index.html
+
+https://www.reddit.com/r/openstack/comments/1gh55hd/openstack_octavia_kollaansible_multinode/

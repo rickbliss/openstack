@@ -2,6 +2,28 @@
 
 ## Overview
 OpenStack Block Storage Service - Manages block storage volumes and snapshots
+ (https://docs.openstack.org/cinder/latest/admin/multi-backend.html#volume-type)
+
+
+https://docs.ceph.com/en/reef/rbd/rbd-openstack/
+
+"
+
+You can create a volume from an image using the Cinder command line tool:
+
+cinder create --image-id {id of image} --display-name {name of volume} {size of volume}
+
+You can use qemu-img to convert from one format to another. For example:
+
+qemu-img convert -f {source-format} -O {output-format} {source-filename} {output-filename}
+qemu-img convert -f qcow2 -O raw precise-cloudimg.img precise-cloudimg.raw
+
+When Glance and Cinder are both using Ceph block devices, the image is a copy-on-write clone, so new volumes are created quickly. In the OpenStack dashboard, you can boot from that volume by performing the following steps:
+
+
+
+openstack volume type set __DEFAULT__ --property volume_backend_name=ssd-rbd
+
 
 ## Directory Structure
 This directory contains configuration files for the cinder service deployed via Kolla-Ansible.
@@ -25,6 +47,7 @@ This directory contains configuration files for the cinder service deployed via 
 - Restart the cinder service after configuration changes
 
 ## Related Documentation
+
 
 - [Kolla-Ansible Cinder Configuration](https://docs.openstack.org/kolla-ansible/latest/reference/)
 - [OpenStack Cinder Documentation](https://docs.openstack.org/cinder/latest/)
