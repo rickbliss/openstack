@@ -4,6 +4,7 @@
 This directory contains the configuration and operational files for an OpenStack deployment managed by Kolla-Ansible. This deployment provides a complete cloud infrastructure platform with compute, storage, networking, and additional services.
 
 
+
 ### Core Services
 - **[Nova](config/nova/README.md)** - Compute service managing virtual machines
 - **[Neutron](config/neutron/README.md)** - Networking service providing network connectivity
@@ -56,9 +57,7 @@ kolla-ansible -i multinode upgrade
 
 # Post-deployment setup
 kolla-ansible -i multinode post-deploy
-```
-# Destroy services
-kolla-ansible -i multinode destroy --include-images --include-dev -v
+
 
 ### Configuration Updates
 1. Modify `globals.yml` for global changes
@@ -78,12 +77,6 @@ podman ps | grep <service-name>
 # View service logs
 podman logs <container-name>
 ```
-
-### Common Issues
-- **Certificate Expiry**: Check certificate validity dates
-- **Service Communication**: Verify network connectivity
-- **Storage Issues**: Check Ceph cluster health
-- **Authentication**: Verify keystone services
 
 ### Log Locations
 - **Deployment Logs**: `/etc/kolla/ansible.log`
@@ -134,32 +127,11 @@ kolla-ansible -i multinode mariadb_recovery
 
 ## Maintenance
 
-### Regular Tasks
-- [ ] Monitor certificate expiration dates
-- [ ] Update system packages
-- [ ] Check storage capacity
-- [ ] Review security logs
-- [ ] Backup configurations
-
-### Scheduled Maintenance
-- **Monthly**: Review and update configurations
-- **Quarterly**: Security audit and certificate renewal
-- **Annually**: Major version upgrades
-
-## Documentation Links
-
 
 ### Community Resources
 - [OpenStack Mailing Lists](https://lists.openstack.org/)
 - [Kolla IRC Channel](https://webchat.oftc.net/?channels=openstack-kolla)
 - [OpenStack Forums](https://ask.openstack.org/)
-
-### Emergency Contacts
-- **System Administrator**: [Your contact information]
-- **OpenStack Team**: [Team contact information]
-- **On-Call Support**: [Emergency contact information]
-
----
 
 **Deployment Information**
 - **Environment**: Production/Staging/Development
@@ -172,4 +144,4 @@ kolla-ansible -i multinode mariadb_recovery
 - Always backup configurations before making changes
 - Test changes in a development environment first
 - Follow change management procedures for production updates
-- Monitor service health after any configuration changes
+

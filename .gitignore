@@ -8,3 +8,12 @@ ansible.log
 # For certificates directory - track the directory but ignore all files
 certificates/*
 !certificates/.gitkeep
+admin-openrc-system.sh
+admin-openrc.sh
+ansible.log
+clouds.yaml
+octavia-openrc.sh
+public-openrc-system.sh
+public-openrc.sh
+ansible.log
+ansible.log

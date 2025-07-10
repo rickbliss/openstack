@@ -1,0 +1,3 @@
+
+TASK [hacluster : Ensure stonith is disabled] ********************************************************************************************************
+fatal: [bc00]: FAILED! => {"changed": true, "cmd": ["podman", "exec", "hacluster_pacemaker", "crm_attribute", "--type", "crm_config", "--name", "stonith-enabled", "--update", "false"], "delta": "0:00:00.017067", "end": "2025-07-09 15:51:57.160370", "msg": "non-zero return code", "rc": 255, "start": "2025-07-09 15:51:57.143303", "stderr": "Error: can only create exec sessions on running containers: container state improper", "stderr_lines": ["Error: can only create exec sessions on running containers: container state improper"], "stdout": "", "stdout_lines": []}

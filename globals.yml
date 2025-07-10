@@ -5,7 +5,7 @@ kolla_base_distro: "ubuntu"
 kolla_install_type: "source"
 kolla_container_engine: "podman"
 enable_docker_repo: "no"
-openstack_logging_debug: "True"
+openstack_logging_debug: "False"
 workaround_ansible_issue_8743: yes
 # ============================================================================
 # DEPLOYMENT & DEBUG SETTINGS
@@ -57,16 +57,14 @@ enable_mariabackup: "yes"
 enable_haproxy: "yes"
 enable_keepalived: "yes"
 enable_redis: "yes"
-enable_hacluster: "yes"
-hacluster_corosync_port: 5405
-enable_cells: "no"
+enable_hacluster: "no"
 enable_fluentd: "no"
 
 
 # ============================================================================
 # OCTAVIA LOAD BALANCER CONFIGURATION
 # ============================================================================
-enable_octavia: "no"
+enable_octavia: "yes"
 octavia_auto_configure: "yes"
 octavia_amp_flavor:
   name: "amphora"
@@ -110,7 +108,7 @@ enable_nova_serialconsole_proxy: "yes"
 # ============================================================================
 glance_backend_ceph: "yes"
 cinder_backend_ceph: "yes"
-enable_manila_backend_cephfs_native: "yes"
+#enable_manila_backend_cephfs_native: "yes"
 nova_backend_ceph: "yes"
 enable_cinder_backup: "yes"
 enable_mariadb_clustercheck: yes
@@ -128,7 +126,7 @@ ceph_cinder_backup_user: "cinder-backup"
 ceph_cinder_backup_keyring: "ceph.client.cinder-backup.keyring"
 
 
-cinder_backup_backend_ceph_name: "ceph"
+cinder_backup_backend_ceph_name: "hdd-backup"
 ceph_cinder_backup_pool_name: "backups"
 
 ###############################################################################
@@ -147,7 +145,7 @@ cinder_ceph_backends:
     user: "cinder"
     pool: "hdd-volumes"
     enabled: "{{ cinder_backend_ceph | bool }}"
-  - name: "ceph"  # This is the backup backend
+  - name: "hdd-backup"  # This is the backup backend
     cluster: "ceph"
     user: "cinder-backup"
     pool: "backups"

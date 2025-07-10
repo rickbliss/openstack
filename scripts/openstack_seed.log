@@ -1,0 +1,312 @@
+[2025-07-09 21:34:34] [INFO] Starting OpenStack cloud seeding...
+[2025-07-09 21:34:34] [INFO] Checking prerequisites...
+[2025-07-09 21:34:34] [INFO] Prerequisites check passed
+[2025-07-09 21:35:19] [INFO] Starting OpenStack cloud seeding...
+[2025-07-09 21:35:19] [INFO] Checking prerequisites...
+[2025-07-09 21:35:19] [INFO] Prerequisites check passed
+[2025-07-09 21:35:23] [INFO] Creating images directory: /etc/kolla/scripts/images
+[2025-07-09 21:35:23] [INFO] Setting unlimited quotas...
+[2025-07-09 21:35:23] [INFO] Setting unlimited quotas for compute and volume resources...
+[2025-07-09 21:35:24] [INFO] Setting compute quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:35:25] [WARNING] Failed to set compute quotas - continuing anyway
+[2025-07-09 21:35:25] [INFO] Setting volume quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:35:26] [WARNING] Failed to set volume quotas - continuing anyway
+[2025-07-09 21:35:26] [INFO] Setting network quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:35:35] [INFO] Starting OpenStack cloud cleanup...
+[2025-07-09 21:35:35] [INFO] Deleting test VMs...
+[2025-07-09 21:35:40] [INFO] Deleting routers...
+[2025-07-09 21:35:40] [INFO] Deleting subnets...
+[2025-07-09 21:35:40] [INFO] Deleting networks...
+[2025-07-09 21:35:40] [INFO] Deleting flavors...
+[2025-07-09 21:35:40] [INFO] Deleting security groups...
+[2025-07-09 21:35:40] [INFO] Deleting volume types...
+[2025-07-09 21:35:40] [INFO] Deleting images...
+[2025-07-09 21:35:40] [INFO] Cleaning up any remaining images created by this script...
+[2025-07-09 21:35:49] [INFO] Cleanup completed successfully!
+[2025-07-09 21:35:54] [INFO] Starting OpenStack cloud seeding...
+[2025-07-09 21:35:54] [INFO] Checking prerequisites...
+[2025-07-09 21:35:54] [INFO] Prerequisites check passed
+[2025-07-09 21:35:57] [INFO] Setting unlimited quotas...
+[2025-07-09 21:35:57] [INFO] Setting unlimited quotas for compute and volume resources...
+[2025-07-09 21:35:58] [INFO] Setting compute quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:36:00] [INFO] Successfully set compute quotas (cores, instances, ram) to unlimited
+[2025-07-09 21:36:00] [INFO] Setting volume quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:36:02] [INFO] Successfully set volume quotas (volumes, gigabytes, snapshots) to unlimited
+[2025-07-09 21:36:02] [INFO] Setting network quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:36:03] [WARNING] Failed to set network quotas - continuing anyway
+[2025-07-09 21:36:03] [INFO] Quota setting completed, continuing with resource creation...
+[2025-07-09 21:36:03] [INFO] Creating volume types...
+[2025-07-09 21:36:03] [INFO] Creating volume types...
+[2025-07-09 21:36:05] [INFO] Volume type 'SSD' already exists
+[2025-07-09 21:36:06] [INFO] Volume type 'HDD' already exists
+[2025-07-09 21:36:08] [INFO] Updating __DEFAULT__ volume type to use ssd-rbd backend
+[2025-07-09 21:36:09] [INFO] Successfully updated __DEFAULT__ volume type
+[2025-07-09 21:36:09] [INFO] Processing images...
+[2025-07-09 21:36:09] [INFO] Downloading ubuntu-24.04 from https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img
+[2025-07-09 21:36:57] [INFO] Successfully downloaded: /etc/kolla/scripts/images/noble-server-cloudimg-amd64.img
+[2025-07-09 21:36:58] [INFO] Uploading image: ubuntu-24.04
+[2025-07-09 21:37:25] [INFO] Successfully uploaded image: ubuntu-24.04 (ID: 6f56294d-991b-4164-bc91-71ddfe654fb8)
+[2025-07-09 21:37:25] [INFO] Downloading centos-10 from https://cloud.centos.org/centos/10-stream/x86_64/images/CentOS-Stream-GenericCloud-10-latest.x86_64.qcow2
+[2025-07-09 21:37:56] [INFO] Successfully downloaded: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-10-latest.x86_64.qcow2
+[2025-07-09 21:37:58] [INFO] Uploading image: centos-10
+[2025-07-09 21:38:31] [INFO] Successfully uploaded image: centos-10 (ID: e29101c8-784d-4ca4-9bd0-06f49f867102)
+[2025-07-09 21:38:31] [INFO] Downloading ubuntu-22.04 from https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+[2025-07-09 21:39:13] [INFO] Successfully downloaded: /etc/kolla/scripts/images/jammy-server-cloudimg-amd64.img
+[2025-07-09 21:39:15] [INFO] Uploading image: ubuntu-22.04
+[2025-07-09 21:39:40] [INFO] Successfully uploaded image: ubuntu-22.04 (ID: 53a13dc8-b5c4-4150-b60c-0512805c1d17)
+[2025-07-09 21:39:40] [INFO] Downloading centos-9 from https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.qcow2
+[2025-07-09 21:43:50] [INFO] Starting OpenStack cloud cleanup...
+[2025-07-09 21:43:50] [INFO] Deleting test VMs...
+[2025-07-09 21:43:55] [INFO] Deleting routers...
+[2025-07-09 21:43:56] [INFO] Deleting subnets...
+[2025-07-09 21:43:56] [INFO] Deleting networks...
+[2025-07-09 21:43:56] [INFO] Deleting flavors...
+[2025-07-09 21:43:56] [INFO] Deleting security groups...
+[2025-07-09 21:43:56] [INFO] Deleting volume types...
+[2025-07-09 21:43:56] [INFO] Deleting images...
+[2025-07-09 21:44:01] [INFO] Deleted image: ubuntu-24.04 (ID: 6f56294d-991b-4164-bc91-71ddfe654fb8)
+[2025-07-09 21:44:06] [INFO] Deleted image: centos-10 (ID: e29101c8-784d-4ca4-9bd0-06f49f867102)
+[2025-07-09 21:44:12] [INFO] Deleted image: ubuntu-22.04 (ID: 53a13dc8-b5c4-4150-b60c-0512805c1d17)
+[2025-07-09 21:44:12] [INFO] Cleaning up any remaining images created by this script...
+[2025-07-09 21:44:15] [INFO] Cleanup completed successfully!
+[2025-07-09 21:44:26] [INFO] Starting OpenStack cloud seeding...
+[2025-07-09 21:44:26] [INFO] Checking prerequisites...
+[2025-07-09 21:44:26] [INFO] Prerequisites check passed
+[2025-07-09 21:44:29] [INFO] Setting unlimited quotas...
+[2025-07-09 21:44:29] [INFO] Setting unlimited quotas for compute and volume resources...
+[2025-07-09 21:44:31] [INFO] Setting compute quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:44:32] [INFO] Successfully set compute quotas (cores, instances, ram) to unlimited
+[2025-07-09 21:44:32] [INFO] Setting volume quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:44:34] [INFO] Successfully set volume quotas (volumes, gigabytes, snapshots) to unlimited
+[2025-07-09 21:44:34] [INFO] Setting network quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:44:35] [WARNING] Failed to set network quotas - continuing anyway
+[2025-07-09 21:44:35] [INFO] Quota setting completed, continuing with resource creation...
+[2025-07-09 21:44:35] [INFO] Creating volume types...
+[2025-07-09 21:44:35] [INFO] Creating volume types...
+[2025-07-09 21:44:36] [INFO] Volume type 'SSD' already exists
+[2025-07-09 21:44:38] [INFO] Volume type 'HDD' already exists
+[2025-07-09 21:44:39] [INFO] Updating __DEFAULT__ volume type to use ssd-rbd backend
+[2025-07-09 21:44:41] [INFO] Successfully updated __DEFAULT__ volume type
+[2025-07-09 21:44:41] [INFO] Processing images...
+[2025-07-09 21:44:41] [INFO] Image already exists: /etc/kolla/scripts/images/noble-server-cloudimg-amd64.img
+[2025-07-09 21:44:41] [INFO] Image already exists: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-10-latest.x86_64.qcow2
+[2025-07-09 21:44:41] [INFO] Image already exists: /etc/kolla/scripts/images/jammy-server-cloudimg-amd64.img
+[2025-07-09 21:44:41] [INFO] Image already exists: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.qcow2
+[2025-07-09 21:44:41] [INFO] Downloading ubuntu-24.10 from https://cloud-images.ubuntu.com/oracular/current/oracular-server-cloudimg-amd64.img
+[2025-07-09 21:45:23] [INFO] Successfully downloaded: /etc/kolla/scripts/images/oracular-server-cloudimg-amd64.img
+[2025-07-09 21:45:23] [INFO] Converting images to raw format...
+[2025-07-09 21:45:23] [INFO] Converting all downloaded images to raw format...
+[2025-07-09 21:45:23] [INFO] Processing conversion for: ubuntu-24.04
+[2025-07-09 21:45:23] [INFO] Converting ubuntu-24.04 from qcow2 to raw format...
+[2025-07-09 21:45:23] [INFO] Source: /etc/kolla/scripts/images/noble-server-cloudimg-amd64.img
+[2025-07-09 21:45:23] [INFO] Target: /etc/kolla/scripts/images/noble-server-cloudimg-amd64.raw
+[2025-07-09 21:45:28] [INFO] Successfully converted ubuntu-24.04 to raw format
+[2025-07-09 21:45:28] [INFO] Image sizes - qcow2: 587M, raw: 1.8G
+[2025-07-09 21:45:28] [INFO] Processing conversion for: centos-10
+[2025-07-09 21:45:28] [INFO] Converting centos-10 from qcow2 to raw format...
+[2025-07-09 21:45:28] [INFO] Source: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-10-latest.x86_64.qcow2
+[2025-07-09 21:45:28] [INFO] Target: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-10-latest.x86_64.raw
+[2025-07-09 21:45:32] [INFO] Successfully converted centos-10 to raw format
+[2025-07-09 21:45:32] [INFO] Image sizes - qcow2: 982M, raw: 1.6G
+[2025-07-09 21:45:32] [INFO] Processing conversion for: ubuntu-22.04
+[2025-07-09 21:45:32] [INFO] Converting ubuntu-22.04 from qcow2 to raw format...
+[2025-07-09 21:45:32] [INFO] Source: /etc/kolla/scripts/images/jammy-server-cloudimg-amd64.img
+[2025-07-09 21:45:32] [INFO] Target: /etc/kolla/scripts/images/jammy-server-cloudimg-amd64.raw
+[2025-07-09 21:45:37] [INFO] Successfully converted ubuntu-22.04 to raw format
+[2025-07-09 21:45:37] [INFO] Image sizes - qcow2: 647M, raw: 1.6G
+[2025-07-09 21:45:37] [INFO] Processing conversion for: centos-9
+[2025-07-09 21:45:37] [INFO] Converting centos-9 from qcow2 to raw format...
+[2025-07-09 21:45:37] [INFO] Source: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.qcow2
+[2025-07-09 21:45:37] [INFO] Target: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.raw
+[2025-07-09 21:45:38] [ERROR] Failed to convert centos-9 to raw format
+[2025-07-09 21:45:38] [ERROR] Failed to convert image: centos-9
+[2025-07-09 21:45:38] [INFO] Processing conversion for: ubuntu-24.10
+[2025-07-09 21:45:38] [INFO] Converting ubuntu-24.10 from qcow2 to raw format...
+[2025-07-09 21:45:38] [INFO] Source: /etc/kolla/scripts/images/oracular-server-cloudimg-amd64.img
+[2025-07-09 21:45:38] [INFO] Target: /etc/kolla/scripts/images/oracular-server-cloudimg-amd64.raw
+[2025-07-09 21:45:43] [INFO] Successfully converted ubuntu-24.10 to raw format
+[2025-07-09 21:45:43] [INFO] Image sizes - qcow2: 588M, raw: 1.8G
+[2025-07-09 21:45:43] [WARNING] Some image conversions failed, but continuing with upload process
+[2025-07-09 21:45:43] [INFO] Uploading images to OpenStack...
+[2025-07-09 21:45:45] [INFO] Uploading image: ubuntu-24.04
+[2025-07-09 21:46:06] [INFO] Successfully uploaded image: ubuntu-24.04 (ID: eac0d109-b11d-4baa-a47b-bf6adb369cb6)
+[2025-07-09 21:46:08] [INFO] Uploading image: centos-10
+[2025-07-09 21:46:39] [INFO] Successfully uploaded image: centos-10 (ID: 21d38cf4-5b53-42f6-ab50-0a7b36bc496f)
+[2025-07-09 21:46:41] [INFO] Uploading image: ubuntu-22.04
+[2025-07-09 21:47:02] [INFO] Successfully uploaded image: ubuntu-22.04 (ID: 1a1925dd-c265-484a-9085-2415bfa5d3b5)
+[2025-07-09 21:47:04] [INFO] Uploading image: centos-9
+[2025-07-09 21:47:17] [INFO] Successfully uploaded image: centos-9 (ID: 82c1c8ca-f6c4-4451-855d-aeded8fe264a)
+[2025-07-09 21:47:19] [INFO] Uploading image: ubuntu-24.10
+[2025-07-09 21:47:40] [INFO] Successfully uploaded image: ubuntu-24.10 (ID: 2fd1d84d-18c2-4a02-a45c-6d54c2689793)
+[2025-07-09 21:47:40] [INFO] Creating flavors...
+[2025-07-09 21:47:42] [INFO] Creating flavor: m1.medium (2vCPUs, 4096MB RAM, 40GB disk)
+[2025-07-09 21:47:44] [INFO] Successfully created flavor: m1.medium (ID: 3e7a1bbc-76b8-46c7-ac65-a0548b903481)
+[2025-07-09 21:47:46] [INFO] Creating flavor: m1.large (4vCPUs, 8192MB RAM, 80GB disk)
+[2025-07-09 21:47:48] [INFO] Successfully created flavor: m1.large (ID: 4cb1654b-e9bd-4d2d-8398-e3c9c2c20110)
+[2025-07-09 21:47:50] [INFO] Creating flavor: m1.small (1vCPUs, 2048MB RAM, 20GB disk)
+[2025-07-09 21:47:52] [INFO] Successfully created flavor: m1.small (ID: 0de4c5d8-eab2-487d-88fa-7115eb61bfcd)
+[2025-07-09 21:47:54] [INFO] Creating flavor: m1.tiny (1vCPUs, 512MB RAM, 1GB disk)
+[2025-07-09 21:47:55] [INFO] Successfully created flavor: m1.tiny (ID: e5f7962d-4d73-4d1a-8cf5-6987c981da92)
+[2025-07-09 21:47:57] [INFO] Creating flavor: m1.xlarge (8vCPUs, 16384MB RAM, 160GB disk)
+[2025-07-09 21:47:59] [INFO] Successfully created flavor: m1.xlarge (ID: 7d792ad7-2b88-474f-82a2-0d7e2e2d2913)
+[2025-07-09 21:47:59] [INFO] Creating network infrastructure...
+[2025-07-09 21:48:01] [INFO] Creating network: ProviderLAN (type: flat, scope: external)
+[2025-07-09 21:48:01] [DEBUG] Executing: openstack network create --external --share --provider-network-type flat --provider-physical-network physnet1 ProviderLAN -f value -c id
+[2025-07-09 21:48:03] [INFO] Successfully created network: ProviderLAN (ID: 6740f9ae-b94f-46e4-99d4-e679683950fe)
+[2025-07-09 21:48:03] [INFO] Creating subnet: ProviderLAN-subnet
+[2025-07-09 21:48:06] [INFO] Successfully created subnet: ProviderLAN-subnet (ID: 9c567670-b4ca-4195-a3f3-1084e3428a63)
+[2025-07-09 21:48:08] [INFO] Creating network: Admin-GenPop (type: tenant, scope: internal)
+[2025-07-09 21:48:08] [DEBUG] Creating tenant network - using default network type
+[2025-07-09 21:48:08] [DEBUG] Executing: openstack network create --internal Admin-GenPop -f value -c id
+[2025-07-09 21:48:11] [INFO] Successfully created network: Admin-GenPop (ID: e9b393b0-7179-4d10-ae04-5ef67fe8d241)
+[2025-07-09 21:48:11] [INFO] Creating subnet: Admin-GenPop-subnet
+[2025-07-09 21:48:14] [INFO] Successfully created subnet: Admin-GenPop-subnet (ID: 8be0afe6-5b62-411e-a4c9-42c9442b749d)
+[2025-07-09 21:48:14] [INFO] Creating router...
+[2025-07-09 21:48:15] [INFO] Creating router: Admin-GenPop-router
+[2025-07-09 21:48:20] [INFO] Successfully created router: Admin-GenPop-router (ID: f86020d9-cd45-432f-bc98-8daf690fb18a) with external IP: 192.168.1.10
+[2025-07-09 21:48:21] [INFO] Adding router interface to subnet: Admin-GenPop-subnet
+[2025-07-09 21:48:25] [INFO] Successfully added router interface to subnet: Admin-GenPop-subnet
+[2025-07-09 21:48:25] [INFO] Creating security group...
+[2025-07-09 21:48:27] [INFO] Creating security group: common-client-access
+[2025-07-09 21:48:29] [INFO] Successfully created security group: common-client-access (ID: b151fcd6-a177-4307-9920-607ab8973950)
+[2025-07-09 21:48:29] [INFO] Adding security group rules to common-client-access
+[2025-07-09 21:48:31] [INFO] Added ICMP rule
+[2025-07-09 21:48:32] [INFO] Added SSH rule (port 22)
+[2025-07-09 21:48:34] [INFO] Added RDP rule (port 3389)
+[2025-07-09 21:48:35] [INFO] Added egress rule
+[2025-07-09 21:48:35] [INFO] OpenStack cloud seeding completed successfully!
+[2025-07-09 21:48:35] [INFO] State file: /etc/kolla/scripts/openstack_seed_state.json
+[2025-07-09 21:48:35] [INFO] Log file: /etc/kolla/scripts/openstack_seed.log
+[2025-07-09 21:51:36] [INFO] Starting OpenStack cloud seeding...
+[2025-07-09 21:51:36] [INFO] Checking prerequisites...
+[2025-07-09 21:51:36] [INFO] Prerequisites check passed
+[2025-07-09 21:51:39] [INFO] Setting unlimited quotas...
+[2025-07-09 21:51:39] [INFO] Setting unlimited quotas for compute and volume resources...
+[2025-07-09 21:51:41] [INFO] Setting compute quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:51:42] [INFO] Successfully set compute quotas (cores, instances, ram) to unlimited
+[2025-07-09 21:51:42] [INFO] Setting volume quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:51:44] [INFO] Successfully set volume quotas (volumes, gigabytes, snapshots) to unlimited
+[2025-07-09 21:51:44] [INFO] Setting network quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:51:45] [WARNING] Failed to set network quotas - continuing anyway
+[2025-07-09 21:51:45] [INFO] Quota setting completed, continuing with resource creation...
+[2025-07-09 21:51:45] [INFO] Creating volume types...
+[2025-07-09 21:51:45] [INFO] Creating volume types...
+[2025-07-09 21:51:46] [INFO] Volume type 'SSD' already exists
+[2025-07-09 21:51:48] [INFO] Volume type 'HDD' already exists
+[2025-07-09 21:51:49] [INFO] Updating __DEFAULT__ volume type to use ssd-rbd backend
+[2025-07-09 21:51:50] [INFO] Successfully updated __DEFAULT__ volume type
+[2025-07-09 21:51:50] [INFO] Processing images...
+[2025-07-09 21:51:50] [INFO] Image already exists: /etc/kolla/scripts/images/noble-server-cloudimg-amd64.img
+[2025-07-09 21:51:50] [INFO] Image already exists: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-10-latest.x86_64.qcow2
+[2025-07-09 21:51:50] [INFO] Image already exists: /etc/kolla/scripts/images/jammy-server-cloudimg-amd64.img
+[2025-07-09 21:51:50] [INFO] Image already exists: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.qcow2
+[2025-07-09 21:51:50] [INFO] Image already exists: /etc/kolla/scripts/images/oracular-server-cloudimg-amd64.img
+[2025-07-09 21:51:50] [INFO] Converting images to raw format...
+[2025-07-09 21:51:50] [INFO] Converting all downloaded images to raw format...
+[2025-07-09 21:51:50] [INFO] Processing conversion for: ubuntu-24.04
+[2025-07-09 21:51:50] [INFO] Raw image already exists: /etc/kolla/scripts/images/noble-server-cloudimg-amd64.raw
+[2025-07-09 21:51:50] [INFO] Processing conversion for: centos-10
+[2025-07-09 21:51:50] [INFO] Raw image already exists: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-10-latest.x86_64.raw
+[2025-07-09 21:51:50] [INFO] Processing conversion for: ubuntu-22.04
+[2025-07-09 21:51:50] [INFO] Raw image already exists: /etc/kolla/scripts/images/jammy-server-cloudimg-amd64.raw
+[2025-07-09 21:51:51] [INFO] Processing conversion for: centos-9
+[2025-07-09 21:51:51] [INFO] Raw image already exists: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.raw
+[2025-07-09 21:51:51] [INFO] Processing conversion for: ubuntu-24.10
+[2025-07-09 21:51:51] [INFO] Raw image already exists: /etc/kolla/scripts/images/oracular-server-cloudimg-amd64.raw
+[2025-07-09 21:51:51] [INFO] All image conversions completed successfully
+[2025-07-09 21:51:51] [INFO] Uploading images to OpenStack...
+[2025-07-09 21:51:52] [INFO] Uploading image: ubuntu-24.04
+[2025-07-09 21:52:14] [INFO] Successfully uploaded image: ubuntu-24.04 (ID: 6572fbf0-f919-4004-868d-51a0f0f2d997)
+[2025-07-09 21:52:16] [INFO] Uploading image: centos-10
+[2025-07-09 21:52:54] [INFO] Successfully uploaded image: centos-10 (ID: 799d7725-721a-4730-93c1-d55817cd8b42)
+[2025-07-09 21:52:56] [INFO] Uploading image: ubuntu-22.04
+[2025-07-09 21:53:16] [INFO] Successfully uploaded image: ubuntu-22.04 (ID: 2f79f76b-0d40-4205-88d4-c0bdc864780e)
+[2025-07-09 21:53:18] [INFO] Uploading image: centos-9
+[2025-07-09 21:53:31] [INFO] Successfully uploaded image: centos-9 (ID: 9082715e-4df3-4ff2-af9b-f0ab3f90f2cc)
+[2025-07-09 21:53:32] [INFO] Uploading image: ubuntu-24.10
+[2025-07-09 21:53:54] [INFO] Successfully uploaded image: ubuntu-24.10 (ID: ce3a503c-1b51-4b99-a772-3a82b5b0fc32)
+[2025-07-09 21:53:54] [INFO] Creating flavors...
+[2025-07-09 21:53:56] [INFO] Flavor 'm1.medium' already exists
+[2025-07-09 21:53:58] [INFO] Flavor 'm1.large' already exists
+[2025-07-09 21:54:00] [INFO] Flavor 'm1.small' already exists
+[2025-07-09 21:54:02] [INFO] Flavor 'm1.tiny' already exists
+[2025-07-09 21:54:04] [INFO] Flavor 'm1.xlarge' already exists
+[2025-07-09 21:54:04] [INFO] Creating network infrastructure...
+[2025-07-09 21:54:05] [INFO] Network 'ProviderLAN' already exists
+[2025-07-09 21:54:08] [INFO] Network 'Admin-GenPop' already exists
+[2025-07-09 21:54:08] [INFO] Creating router...
+[2025-07-09 21:54:10] [INFO] Router 'Admin-GenPop-router' already exists
+[2025-07-09 21:54:11] [INFO] Creating security group...
+[2025-07-09 21:54:13] [INFO] Security group 'common-client-access' already exists
+[2025-07-09 21:54:13] [INFO] OpenStack cloud seeding completed successfully!
+[2025-07-09 21:54:13] [INFO] State file: /etc/kolla/scripts/openstack_seed_state.json
+[2025-07-09 21:54:13] [INFO] Log file: /etc/kolla/scripts/openstack_seed.log
+[2025-07-09 21:56:09] [INFO] Starting OpenStack cloud seeding...
+[2025-07-09 21:56:09] [INFO] Checking prerequisites...
+[2025-07-09 21:56:09] [INFO] Prerequisites check passed
+[2025-07-09 21:56:12] [INFO] Setting unlimited quotas...
+[2025-07-09 21:56:12] [INFO] Setting unlimited quotas for compute and volume resources...
+[2025-07-09 21:56:13] [INFO] Setting compute quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:56:14] [INFO] Successfully set compute quotas (cores, instances, ram) to unlimited
+[2025-07-09 21:56:14] [INFO] Setting volume quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:56:16] [INFO] Successfully set volume quotas (volumes, gigabytes, snapshots) to unlimited
+[2025-07-09 21:56:16] [INFO] Setting network quotas to unlimited for project: a2bf637a895b4532a01069d67935f156
+[2025-07-09 21:56:17] [WARNING] Failed to set network quotas - continuing anyway
+[2025-07-09 21:56:17] [INFO] Quota setting completed, continuing with resource creation...
+[2025-07-09 21:56:17] [INFO] Creating volume types...
+[2025-07-09 21:56:17] [INFO] Creating volume types...
+[2025-07-09 21:56:19] [INFO] Volume type 'SSD' already exists
+[2025-07-09 21:56:20] [INFO] Volume type 'HDD' already exists
+[2025-07-09 21:56:21] [INFO] Updating __DEFAULT__ volume type to use ssd-rbd backend
+[2025-07-09 21:56:23] [INFO] Successfully updated __DEFAULT__ volume type
+[2025-07-09 21:56:23] [INFO] Processing images...
+[2025-07-09 21:56:23] [INFO] Image already exists: /etc/kolla/scripts/images/noble-server-cloudimg-amd64.img
+[2025-07-09 21:56:23] [INFO] Image already exists: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-10-latest.x86_64.qcow2
+[2025-07-09 21:56:23] [INFO] Image already exists: /etc/kolla/scripts/images/jammy-server-cloudimg-amd64.img
+[2025-07-09 21:56:23] [INFO] Image already exists: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.qcow2
+[2025-07-09 21:56:23] [INFO] Image already exists: /etc/kolla/scripts/images/oracular-server-cloudimg-amd64.img
+[2025-07-09 21:56:23] [INFO] Converting images to raw format...
+[2025-07-09 21:56:23] [INFO] Converting all downloaded images to raw format...
+[2025-07-09 21:56:23] [INFO] Processing conversion for: ubuntu-24.04
+[2025-07-09 21:56:23] [INFO] Raw image already exists: /etc/kolla/scripts/images/noble-server-cloudimg-amd64.raw
+[2025-07-09 21:56:23] [INFO] File type verification: unknown
+[2025-07-09 21:56:23] [INFO] Processing conversion for: centos-10
+[2025-07-09 21:56:23] [INFO] Raw image already exists: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-10-latest.x86_64.raw
+[2025-07-09 21:56:23] [INFO] File type verification: unknown
+[2025-07-09 21:56:23] [INFO] Processing conversion for: ubuntu-22.04
+[2025-07-09 21:56:23] [INFO] Raw image already exists: /etc/kolla/scripts/images/jammy-server-cloudimg-amd64.raw
+[2025-07-09 21:56:23] [INFO] File type verification: unknown
+[2025-07-09 21:56:23] [INFO] Processing conversion for: centos-9
+[2025-07-09 21:56:23] [INFO] Raw image already exists: /etc/kolla/scripts/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.raw
+[2025-07-09 21:56:23] [INFO] File type verification: unknown
+[2025-07-09 21:56:23] [INFO] Processing conversion for: ubuntu-24.10
+[2025-07-09 21:56:23] [INFO] Raw image already exists: /etc/kolla/scripts/images/oracular-server-cloudimg-amd64.raw
+[2025-07-09 21:56:23] [INFO] File type verification: unknown
+[2025-07-09 21:56:23] [INFO] All image conversions completed successfully
+[2025-07-09 21:56:23] [INFO] Uploading images to OpenStack...
+[2025-07-09 21:56:24] [INFO] Uploading image: ubuntu-24.04
+[2025-07-09 21:56:43] [INFO] Successfully uploaded image: ubuntu-24.04 (ID: 5336992c-b0a6-4db2-9e92-52d074a68c1f)
+[2025-07-09 21:56:44] [INFO] Uploading image: centos-10
+[2025-07-09 21:57:17] [INFO] Successfully uploaded image: centos-10 (ID: 156b783e-2862-444f-b055-f74dab60ba40)
+[2025-07-09 21:57:18] [INFO] Uploading image: ubuntu-22.04
+[2025-07-09 21:57:43] [INFO] Successfully uploaded image: ubuntu-22.04 (ID: 0e6d2c60-6a92-4562-b69c-144abc9a0aef)
+[2025-07-09 21:57:44] [INFO] Uploading image: centos-9
+[2025-07-09 21:57:55] [INFO] Successfully uploaded image: centos-9 (ID: f0e4635b-83ac-428f-b0a6-c37ca12dc49a)
+[2025-07-09 21:57:56] [INFO] Uploading image: ubuntu-24.10
+[2025-07-09 21:58:17] [INFO] Successfully uploaded image: ubuntu-24.10 (ID: 0bc514d6-7497-45e2-bb1a-9d0d62ea0db8)
+[2025-07-09 21:58:17] [INFO] Creating flavors...
+[2025-07-09 21:58:19] [INFO] Flavor 'm1.medium' already exists
+[2025-07-09 21:58:21] [INFO] Flavor 'm1.large' already exists
+[2025-07-09 21:58:23] [INFO] Flavor 'm1.small' already exists
+[2025-07-09 21:58:24] [INFO] Flavor 'm1.tiny' already exists
+[2025-07-09 21:58:25] [INFO] Flavor 'm1.xlarge' already exists
+[2025-07-09 21:58:25] [INFO] Creating network infrastructure...
+[2025-07-09 21:58:27] [INFO] Network 'ProviderLAN' already exists
+[2025-07-09 21:58:29] [INFO] Network 'Admin-GenPop' already exists
+[2025-07-09 21:58:29] [INFO] Creating router...
+[2025-07-09 21:58:30] [INFO] Router 'Admin-GenPop-router' already exists
+[2025-07-09 21:58:32] [INFO] Creating security group...
+[2025-07-09 21:58:34] [INFO] Security group 'common-client-access' already exists
+[2025-07-09 21:58:34] [INFO] OpenStack cloud seeding completed successfully!
+[2025-07-09 21:58:34] [INFO] State file: /etc/kolla/scripts/openstack_seed_state.json
+[2025-07-09 21:58:34] [INFO] Log file: /etc/kolla/scripts/openstack_seed.log
