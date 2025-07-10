@@ -53,3 +53,4 @@ openstack image create amphora-x64-haproxy.qcow2 \
 - The image upload command must be executed on the control node
 - Ensure you have proper OpenStack credentials configured
 - The amphora image will be tagged and configured with specific hardware properties for optimal performance
+

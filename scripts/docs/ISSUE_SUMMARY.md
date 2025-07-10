@@ -1,13 +1,13 @@
 # Issue Summary Dashboard
 
-*Last Updated: Wed Jul  9 05:56:21 PM EDT 2025*
+*Last Updated: Wed Jul  9 11:21:52 PM EDT 2025*
 
 ## Quick Stats
 
 | Metric | Count |
 |--------|-------|
-| Open Issues | 4 |
-| Closed Issues | 1 |
+| Open Issues | 6 |
+| Closed Issues | 6 |
 | Critical (P0) | 0 |
 | High Priority (P1) | 0 |
 
@@ -26,17 +26,31 @@
 ## Recent Activity
 
 ### Recently Created (Last 7 days)
-- [#6](https://github.com/rickbliss/openstack/issues/6) Test LB (OPEN)
-- [#5](https://github.com/rickbliss/openstack/issues/5) upload amphora from bc00 (OPEN)
+- [#13](https://github.com/rickbliss/openstack/issues/13) Clean up documentation and references (OPEN)
+- [#12](https://github.com/rickbliss/openstack/issues/12) Fix Ceph Back permissions (OPEN)
+- [#11](https://github.com/rickbliss/openstack/issues/11) CELEBRATE WORKING LOAD BALANCER (CLOSED)
+- [#10](https://github.com/rickbliss/openstack/issues/10) Investigate moving from pfSense ACME (OPEN)
+- [#9](https://github.com/rickbliss/openstack/issues/9) Enable Manilla (OPEN)
+- [#8](https://github.com/rickbliss/openstack/issues/8) Configure GPU Nodes and Nova for PCI pass through (OPEN)
+- [#7](https://github.com/rickbliss/openstack/issues/7) Volumes can't be created for type HDD (CLOSED)
+- [#6](https://github.com/rickbliss/openstack/issues/6) Test LB (CLOSED)
+- [#5](https://github.com/rickbliss/openstack/issues/5) upload amphora from bc00 (CLOSED)
 - [#3](https://github.com/rickbliss/openstack/issues/3) clusterha broken (OPEN)
-- [#2](https://github.com/rickbliss/openstack/issues/2) Update Seed Script to Populate volume types with ceph backends (OPEN)
+- [#2](https://github.com/rickbliss/openstack/issues/2) Update Seed Script to Populate volume types with ceph backends (CLOSED)
 - [#1](https://github.com/rickbliss/openstack/issues/1) Configure Octavia (CLOSED)
 
 ### Recently Updated (Last 3 days)
-- [#6](https://github.com/rickbliss/openstack/issues/6) Test LB (OPEN)
-- [#5](https://github.com/rickbliss/openstack/issues/5) upload amphora from bc00 (OPEN)
+- [#13](https://github.com/rickbliss/openstack/issues/13) Clean up documentation and references (OPEN)
+- [#12](https://github.com/rickbliss/openstack/issues/12) Fix Ceph Back permissions (OPEN)
+- [#11](https://github.com/rickbliss/openstack/issues/11) CELEBRATE WORKING LOAD BALANCER (CLOSED)
+- [#10](https://github.com/rickbliss/openstack/issues/10) Investigate moving from pfSense ACME (OPEN)
+- [#9](https://github.com/rickbliss/openstack/issues/9) Enable Manilla (OPEN)
+- [#8](https://github.com/rickbliss/openstack/issues/8) Configure GPU Nodes and Nova for PCI pass through (OPEN)
+- [#7](https://github.com/rickbliss/openstack/issues/7) Volumes can't be created for type HDD (CLOSED)
+- [#6](https://github.com/rickbliss/openstack/issues/6) Test LB (CLOSED)
+- [#5](https://github.com/rickbliss/openstack/issues/5) upload amphora from bc00 (CLOSED)
 - [#3](https://github.com/rickbliss/openstack/issues/3) clusterha broken (OPEN)
-- [#2](https://github.com/rickbliss/openstack/issues/2) Update Seed Script to Populate volume types with ceph backends (OPEN)
+- [#2](https://github.com/rickbliss/openstack/issues/2) Update Seed Script to Populate volume types with ceph backends (CLOSED)
 - [#1](https://github.com/rickbliss/openstack/issues/1) Configure Octavia (CLOSED)
 
 ---

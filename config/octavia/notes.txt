@@ -44,3 +44,23 @@ https://docs.openstack.org/octavia/latest/configuration/policy.html
 https://docs.openstack.org/octavia/latest/admin/providers/index.html
 
 https://www.reddit.com/r/openstack/comments/1gh55hd/openstack_octavia_kollaansible_multinode/
+
+I used provider network vlan 54 for apmhora in which dchp is getting assgned
+The server will need to used config drive since its not talking to ovn metadata
+
+https://docs.openstack.org/glance/latest/admin/useful-image-properties.html
+
+openstack image set --property img_config_drive=mandatory amphora-x64-haproxy.qcow2
+
+https://docs.openstack.org/kolla-ansible/latest/reference/networking/octavia.html
+Debug
+SSH to an amphora
+
+login into one of octavia-worker nodes, and ssh into amphora.
+
+ssh -i /etc/kolla/octavia-worker/octavia_ssh_key ubuntu@<amphora_ip>
+
+ 
+Note
+
+amphora private key is located at /etc/kolla/octavia-worker/octavia_ssh_key on all octavia-worker nodes.
