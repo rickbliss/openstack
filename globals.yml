@@ -35,6 +35,7 @@ kolla_external_fqdn_cert: "{{ kolla_certificates_dir }}/public.openstack.jyiii.o
 # NEUTRON CONFIGURATION
 # ============================================================================
 neutron_plugin_agent: "ovn"
+enable_ovn_sb_db_relay: "no"
 enable_neutron_provider_networks: "yes"
 neutron_type_drivers: "flat,vlan,vxlan"
 neutron_tenant_network_types: "vxlan"
@@ -44,6 +45,8 @@ neutron_bridge_name: "br-ex"
 neutron_dns_integration: "yes"
 neutron_dns_domain: "localdomain."
 enable_neutron_vpnaas: "no"
+syslog_server: "syslog.localdomain"
+syslog_udp_port: "5140"
 
 # ============================================================================
 # CORE OPENSTACK SERVICES
@@ -51,7 +54,7 @@ enable_neutron_vpnaas: "no"
 enable_openstack_core: "yes"
 enable_cinder: "yes"
 enable_cinder_backup: "yes"
-enable_barbican: "yes"
+enable_barbican: "no"
 enable_haproxy: "yes"
 enable_keepalived: "yes"
 enable_redis: "yes"
@@ -68,16 +71,16 @@ enable_proxysql: "no"
 # ============================================================================
 # HORIZON, HEAT, AND ADDITIONAL SERVICES
 # ============================================================================
-enable_heat: "yes"
+enable_heat: "no"
 enable_horizon: "yes"
 enable_magnum: "no"
-enable_manila: "no"
 enable_swift: "no"
 enable_designate: "no"
 
 # ============================================================================
 # OCTAVIA LOAD BALANCER CONFIGURATION
 # ============================================================================
+octavia_logging_debug: "True"
 enable_octavia: "yes"
 octavia_auto_configure: "yes"
 octavia_certs_country: US
@@ -137,9 +140,9 @@ ceph_cinder_backup_user: "cinder-backup"
 ceph_cinder_backup_keyring: "ceph.client.cinder-backup.keyring"
 
 # Cinder backup settings
-cinder_backup_driver: "cinder.backup.drivers.ceph"
-cinder_backup_backend_ceph_name: "hdd-backup"
-ceph_cinder_backup_pool_name: "backups"
+cinder_backup_driver: "ceph"
+ceph_cinder_backup_pool_name: "hdd-backups"
+cinder_backup_backend_ceph_name: "hdd-rbd"
 
 # Ceph pool for Nova ephemeral disks
 ceph_nova_pool_name: "ssd-vms"
@@ -149,24 +152,20 @@ cinder_cluster_name: "cinder_ha_cluster"
 cinder_enabled_backends:
   - name: ssd-rbd
   - name: hdd-rbd
-  - name: hdd-backup
   
 cinder_ceph_backends:
   - name: "ssd-rbd"
     cluster: "ceph"
     user: "cinder"
     pool: "ssd-volumes"
+    availability_zone: "nova"
     enabled: "{{ cinder_backend_ceph | bool }}"
   - name: "hdd-rbd"
     cluster: "ceph"
     user: "cinder"
     pool: "hdd-volumes"
+    availability_zone: "nova"
     enabled: "{{ cinder_backend_ceph | bool }}"
-  - name: "hdd-backup"
-    cluster: "ceph"
-    user: "cinder-backup"
-    pool: "backups"
-    enabled: "{{ enable_cinder_backup | bool }}"
 
 # ============================================================================
 # CEPH RBD CACHE CONFIGURATION
@@ -188,3 +187,19 @@ ceph_glance_rbd_cache_writethrough_until_flush: "true"
 ceph_glance_rbd_cache_size: "67108864"
 ceph_glance_rbd_cache_max_dirty: "33554432"
 ceph_glance_rbd_cache_target_dirty: "16777216"
+
+# ============================================================================
+# CEPH MANILA CONFIGURATION
+# ============================================================================
+enable_manila: "yes"
+manila_backend_cephfs_native: "yes"
+
+# Use the CephFS native driver (no share server management)
+manila_cephfs_native_backend_driver: "cephfs"
+manila_cephfs_native_share_backend_name: "cephfs_hdd"
+manila_cephfs_native_cephfs_conf_path: "/etc/ceph/ceph.conf"
+manila_cephfs_native_cephfs_auth_id: "manila"
+manila_cephfs_native_cephfs_cluster_name: "ceph"
+manila_cephfs_native_cephfs_filesystem_name: "cephfs_hdd"
+manila_cephfs_native_cephfs_volume_mode: "755"
+manila_cephfs_native_cephfs_enable_snapshots: "true"

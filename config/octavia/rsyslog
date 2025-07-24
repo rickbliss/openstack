@@ -1,0 +1,26 @@
+#/etc/rsyslog.d/90-graylog-forwarding.conf
+
+$template GraylogFormat,"<%pri%>%timestamp:::date-rfc3339% %HOSTNAME% %syslogtag%%msg%\n"
+
+module(load="imfile" PollingInterval="10")
+
+# Forward syslog over UDP
+*.* @syslog.localdomain:5140;GraylogFormat
+
+# Recurse all /var/log/kolla/**/*.log files
+input(type="imfile"
+      File="/var/log/kolla/*.log"
+      Tag="kolla:"
+      Severity="info"
+      Facility="local0"
+      Recursive="on")
+
+# Forward Kolla logs
+if ($programname == 'kolla') then {
+    action(type="omfwd"
+           Target="syslog.localdomain"
+           Port="5140"
+           Protocol="udp"
+           Template="GraylogFormat")
+    stop
+}

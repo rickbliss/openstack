@@ -1,0 +1,10 @@
+service_type: nfs
+service_id: manila-ganesha
+placement:
+  count: 3
+  hosts:
+    - bc00
+    - bc01
+    - bc03
+spec:
+  port: 2049

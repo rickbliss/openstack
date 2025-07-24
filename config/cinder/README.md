@@ -7,7 +7,34 @@ OpenStack Block Storage Service - Manages block storage volumes and snapshots
 
 https://docs.ceph.com/en/reef/rbd/rbd-openstack/
 
-"
+(cinder-volume)[cinder@bc01 /]$ cinder-manage service list
+Binary           Host                                 Zone             Status     State Updated At           RPC Version  Object Version  Cluster                             
+cinder-scheduler bc00                                 nova             enabled    :-)   2025-07-10 19:36:39  3.12         1.39                                                
+cinder-scheduler bc02                                 nova             enabled    :-)   2025-07-10 19:36:40  3.12         1.39                                                
+cinder-scheduler bc03                                 nova             enabled    :-)   2025-07-10 19:36:46  3.12         1.39                                                
+cinder-volume    bc01@ssd-rbd                         nova             enabled    :-)   2025-07-10 19:36:44  3.20         1.39            cinder_ha_cluster@ssd-rbd           
+cinder-volume    bc01@hdd-rbd                         nova             enabled    :-)   2025-07-10 19:36:44  3.20         1.39            cinder_ha_cluster@hdd-rbd           
+cinder-volume    bc02@ssd-rbd                         nova             enabled    :-)   2025-07-10 19:36:46  3.20         1.39            cinder_ha_cluster@ssd-rbd           
+cinder-volume    bc02@hdd-rbd                         nova             enabled    :-)   2025-07-10 19:36:38  3.20         1.39            cinder_ha_cluster@hdd-rbd           
+cinder-volume    bc02@ceph                            nova             enabled    XXX   2025-07-10 01:14:03  3.20         1.39            cinder_ha_cluster@ceph              
+cinder-backup    bc01                                 nova             enabled    :-)   2025-07-10 19:36:42  2.4          1.39                                                
+cinder-backup    bc02                                 nova             enabled    :-)   2025-07-10 19:36:44  2.4          1.39                                                
+cinder-volume    bc02@hdd-backup                      nova             enabled    :-)   2025-07-10 19:36:45  3.20         1.39            cinder_ha_cluster@hdd-backup        
+cinder-volume    bc01@hdd-backup                      nova             enabled    :-)   2025-07-10 19:36:44  3.20         1.39            cinder_ha_cluster@hdd-backup  
+
+(cinder-volume)[cinder@bc01 /]$ cinder-manage service list
+Binary           Host                                 Zone             Status     State Updated At           RPC Version  Object Version  Cluster                             
+cinder-scheduler bc00                                 nova             enabled    :-)   2025-07-10 19:40:49  3.12         1.39                                                
+cinder-scheduler bc02                                 nova             enabled    :-)   2025-07-10 19:40:50  3.12         1.39                                                
+cinder-scheduler bc03                                 nova             enabled    :-)   2025-07-10 19:40:46  3.12         1.39                                                
+cinder-volume    bc01@ssd-rbd                         nova             enabled    :-)   2025-07-10 19:40:45  3.20         1.39            cinder_ha_cluster@ssd-rbd           
+cinder-volume    bc01@hdd-rbd                         nova             enabled    :-)   2025-07-10 19:40:44  3.20         1.39            cinder_ha_cluster@hdd-rbd           
+cinder-volume    bc02@ssd-rbd                         nova             enabled    :-)   2025-07-10 19:40:46  3.20         1.39            cinder_ha_cluster@ssd-rbd           
+cinder-volume    bc02@hdd-rbd                         nova             enabled    :-)   2025-07-10 19:40:48  3.20         1.39            cinder_ha_cluster@hdd-rbd           
+cinder-backup    bc01                                 nova             enabled    :-)   2025-07-10 19:40:42  2.4          1.39                                                
+cinder-backup    bc02                                 nova             enabled    :-)   2025-07-10 19:40:44  2.4          1.39                                                
+cinder-volume    bc02@hdd-backup                      nova             enabled    :-)   2025-07-10 19:40:45  3.20         1.39            cinder_ha_cluster@hdd-backup        
+cinder-volume    bc01@hdd-backup                      nova             enabled    :-)   2025-07-10 19:40:44  3.20         1.39            cinder_ha_cluster@hdd-backup  
 
 You can create a volume from an image using the Cinder command line tool:
 

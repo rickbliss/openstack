@@ -1,0 +1,7 @@
+https://access.redhat.com/solutions/3987761
+Had to login to one a cinder-backup pod using the cinder user and the changed 
+everything to ceph
+
+2025-07-10 21:53:07.214 1141 INFO cinder.volume.manager [None req-0c3eeb76-e824-4454-882a-65cc391545e0 - - - - - -] Initializing RPC dependent components of volume driver RBDDriver (1.3.0)
+2025-07-10 21:53:07.235 1098 INFO cinder.volume.manager [None req-7d32971b-d3a8-4163-bb16-c62c0092bf93 - - - - - -] Driver post RPC initialization completed successfully.
+2025-07-10 21:53:07.266 1141 INFO cinder.volume.manager [None req-0c3eeb76-e824-4454-882a-65cc391545e0 - - - - - -] Driver post RPC initialization completed successfully.

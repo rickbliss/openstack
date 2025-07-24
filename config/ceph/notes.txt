@@ -79,11 +79,10 @@ ceph auth caps client.nova \
 
 echo "🔹 Setting caps for client.cinder-backup..."
 ceph auth caps client.cinder-backup \
-  mon 'allow r' \
-  osd 'allow class-read object_prefix rbd_children' \
-  osd 'allow rwx pool=backups' \
-  osd 'allow rwx pool=hdd-volumes' \
-  osd 'allow rwx pool=ssd-volumes'
+  mon 'profile rbd' \
+  osd 'profile rbd pool=backups' \
+  mgr 'profile rbd-read-only pool=images' \
+  mgr 'profile rbd pool=backups'
 
 echo "✅ All caps applied."
 
@@ -106,12 +105,19 @@ echo "✅ All keyrings exported successfully."
 
 #I think kolla does this be merging all of the different serice confs into one via globals etc
 
+for host in  bc00 bc01 bc02 bc03 bc04; do
+  sudo ceph auth get-or-create client.manila   | sudo ssh "$host" sudo tee /etc/ceph/ceph.client.manila.keyring
+  sudo ceph auth get-or-create client.manila-ganesha   | sudo ssh "$host" sudo tee /etc/ceph/ceph.client.manila-ganesha.keyring
+done
 
-for host in localhost bc00 bc01 bc02 bc03 bc04; do
+
+for host in  bc00 bc01 bc02 bc03 bc04; do
   sudo ceph auth get-or-create client.glance | ssh "$host" sudo tee /etc/ceph/ceph.client.glance.keyring
   sudo ceph auth get-or-create client.cinder | ssh "$host" sudo tee /etc/ceph/ceph.client.cinder.keyring
   sudo ceph auth get-or-create client.nova   | ssh "$host" sudo tee /etc/ceph/ceph.client.nova.keyring
   sudo ceph auth get-or-create client.cinder-backup   | ssh "$host" sudo tee /etc/ceph/ceph.client.cinder-backup.keyring
+  sudo ceph auth get-or-create client.manila   | ssh "$host" sudo tee /etc/ceph/ceph.client.manila.keyring
+  sudo ceph 
   sudo scp -i ~/.ssh/id_rsa /etc/ceph/ceph.conf $host:/etc/ceph
 done
 
@@ -174,3 +180,41 @@ for img in $(openstack image list -f value -c ID); do
     --property os_require_quiesce=yes \
     "$img"
 done
+
+#### MetaData for rbd
+# === Create and configure metadata pools for HDD-backed volumes ===
+
+ceph osd pool create hdd-vms-meta 32 32 replicated
+ceph osd pool set hdd-vms-meta crush_rule ssd_rule
+rbd pool init -p hdd-vms-meta
+
+ceph osd pool create hdd-volumes-meta 32 32 replicated
+ceph osd pool set hdd-volumes-meta crush_rule ssd_rule
+rbd pool init -p hdd-volumes-meta
+
+# === Create and configure metadata pools for SSD-backed volumes ===
+
+ceph osd pool create ssd-vms-meta 32 32 replicated
+ceph osd pool set ssd-vms-meta crush_rule ssd_rule
+rbd pool init -p ssd-vms-meta
+
+ceph osd pool create ssd-volumes-meta 32 32 replicated
+ceph osd pool set ssd-volumes-meta crush_rule ssd_rule
+rbd pool init -p ssd-volumes-meta
+
+# === Optional: Metadata pool for 'images' pool ===
+
+ceph osd pool create images-meta 32 32 replicated
+ceph osd pool set images-meta crush_rule ssd_rule
+rbd pool init -p images-meta
+
+--property hw_scsi_model=virtio-scsi --property hw_disk_bus=scsi --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes 
+
+[client.manila]
+	key = AQDZdnJoVSVfMhAA2EMidm0Wt22pCJGmsu4GMw==
+	caps mds = "allow * fsname=cephfs_hdd"
+	caps mon = "allow r"
+	caps osd = "allow rw pool=cephfs_hdd_data, allow rw pool=cephfs_hdd_metadata"
+root@rick-laptop:/etc/kolla/config/manila# 
+
+

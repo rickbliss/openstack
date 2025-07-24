@@ -2,7 +2,7 @@
 # additional groups are for more control of the environment.
 [control]
 bc00
-bc02
+bc01
 bc03
 
 
@@ -13,18 +13,19 @@ bc03
 # This can be the same as a host in the control group
 [network]
 bc01
-bc02
+bc00
+bc03
 
 
 [compute]
 bc00
-bc01
 bc02
 bc03
 bc04
+bc05
 
 [monitoring]
-bc02
+bc03
 
 # When compute nodes and control nodes use different interfaces,
 # you need to comment out "api_interface" and other interfaces from the globals.yml
@@ -32,8 +33,8 @@ bc02
 #compute01 neutron_external_interface=eth0 api_interface=em1 tunnel_interface=em1
 
 [storage]
+bc00
 bc01
-bc02
 
 [deployment]
 localhost       ansible_connection=local
