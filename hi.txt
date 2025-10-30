@@ -1,0 +1,2000 @@
+2025-07-27 14:10:01.686 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc
+2025-07-27 14:10:01.687 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/7b0190bcc43e207f7555332f75b9820936c98ab9
+2025-07-27 14:10:01.687 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 14:10:01.687 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removable base files: /var/lib/nova/instances/_base/414809e3793b431028a6e885598a0415fb7b289d /var/lib/nova/instances/_base/64b8ffb9872db493d02d7928ffe0b066c4ac01d8 /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276 /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18 /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80 /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc /var/lib/nova/instances/_base/7b0190bcc43e207f7555332f75b9820936c98ab9
+2025-07-27 14:10:01.688 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/414809e3793b431028a6e885598a0415fb7b289d
+2025-07-27 14:10:01.688 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/64b8ffb9872db493d02d7928ffe0b066c4ac01d8
+2025-07-27 14:10:01.689 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276
+2025-07-27 14:10:01.689 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18
+2025-07-27 14:10:01.689 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 14:10:01.690 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc
+2025-07-27 14:10:01.690 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/7b0190bcc43e207f7555332f75b9820936c98ab9
+2025-07-27 14:51:38.681 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 14:51:38.684 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/414809e3793b431028a6e885598a0415fb7b289d
+2025-07-27 14:51:38.684 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/64b8ffb9872db493d02d7928ffe0b066c4ac01d8
+2025-07-27 14:51:38.685 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276
+2025-07-27 14:51:38.685 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18
+2025-07-27 14:51:38.685 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 14:51:38.686 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc
+2025-07-27 14:51:38.686 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/7b0190bcc43e207f7555332f75b9820936c98ab9
+2025-07-27 14:51:38.686 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 14:51:38.687 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removable base files: /var/lib/nova/instances/_base/414809e3793b431028a6e885598a0415fb7b289d /var/lib/nova/instances/_base/64b8ffb9872db493d02d7928ffe0b066c4ac01d8 /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276 /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18 /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80 /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc /var/lib/nova/instances/_base/7b0190bcc43e207f7555332f75b9820936c98ab9
+2025-07-27 14:51:38.688 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removing base, swap or ephemeral file: /var/lib/nova/instances/_base/414809e3793b431028a6e885598a0415fb7b289d
+2025-07-27 14:51:40.104 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removing base, swap or ephemeral file: /var/lib/nova/instances/_base/64b8ffb9872db493d02d7928ffe0b066c4ac01d8
+2025-07-27 14:51:41.459 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276
+2025-07-27 14:51:41.460 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18
+2025-07-27 14:51:41.460 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 14:51:41.460 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc
+2025-07-27 14:51:41.460 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/7b0190bcc43e207f7555332f75b9820936c98ab9
+2025-07-27 15:32:52.685 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 15:32:52.690 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276
+2025-07-27 15:32:52.690 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18
+2025-07-27 15:32:52.691 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 15:32:52.691 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc
+2025-07-27 15:32:52.692 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/7b0190bcc43e207f7555332f75b9820936c98ab9
+2025-07-27 15:32:52.692 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 15:32:52.692 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removable base files: /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276 /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18 /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80 /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc /var/lib/nova/instances/_base/7b0190bcc43e207f7555332f75b9820936c98ab9
+2025-07-27 15:32:52.693 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276
+2025-07-27 15:32:52.694 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18
+2025-07-27 15:32:52.694 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 15:32:52.695 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc
+2025-07-27 15:32:52.695 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removing base, swap or ephemeral file: /var/lib/nova/instances/_base/7b0190bcc43e207f7555332f75b9820936c98ab9
+2025-07-27 16:13:42.851 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 16:13:42.854 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276
+2025-07-27 16:13:42.855 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18
+2025-07-27 16:13:42.855 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 16:13:42.856 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc
+2025-07-27 16:13:42.856 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 16:13:42.857 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removable base files: /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276 /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18 /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80 /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc
+2025-07-27 16:13:42.857 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removing base, swap or ephemeral file: /var/lib/nova/instances/_base/08a518bb1d5798b6031d81e86467ad79e3765276
+2025-07-27 16:13:44.510 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18
+2025-07-27 16:13:44.511 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 16:13:44.511 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removing base, swap or ephemeral file: /var/lib/nova/instances/_base/e27331f1c0be312713039708ed72777c1fee12bc
+2025-07-27 16:53:35.688 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 16:53:35.691 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18
+2025-07-27 16:53:35.692 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 16:53:35.692 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 16:53:35.692 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removable base files: /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18 /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 16:53:35.693 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removing base, swap or ephemeral file: /var/lib/nova/instances/_base/e5084dc61c2c33a64999539e2bf87b65701a9d18
+2025-07-27 16:53:37.290 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Base, swap or ephemeral file too young to remove: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 17:34:53.941 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 17:34:53.945 2 WARNING nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Unknown base file: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 17:34:53.945 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 17:34:53.946 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removable base files: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 17:34:53.947 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Removing base, swap or ephemeral file: /var/lib/nova/instances/_base/1b1b679a195cbe88b34c1202193bfe3e69866d80
+2025-07-27 18:16:03.681 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 18:16:03.684 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 18:56:49.683 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 18:56:49.686 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 19:38:25.681 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 19:38:25.684 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 20:20:04.404 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 20:20:04.407 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 21:01:14.683 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 21:01:14.685 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 21:42:26.964 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 21:42:26.967 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 22:23:53.688 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 22:23:53.693 2 INFO nova.virt.libvirt.imagecache [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 22:28:54.362 2 INFO nova.virt.libvirt.driver [None req-63e342e7-f8c9-4274-aec6-f3b118908511 - - - - - -] Connection event '0' reason 'Connection to libvirt lost: 0'
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host [None req-6e1611c1-9a3b-4859-9a25-00d499d4fdd1 - - - - - -] Connection to libvirt failed: unable to connect to server at '10.0.55.7:16509': Connection refused: libvirt.libvirtError: unable to connect to server at '10.0.55.7:16509': Connection refused
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host Traceback (most recent call last):
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 582, in get_connection
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     conn = self._get_connection()
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host            ^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 556, in _get_connection
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     with excutils.save_and_reraise_exception():
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 227, in __exit__
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     self.force_reraise()
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 200, in force_reraise
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     raise self.value
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 554, in _get_connection
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     self._wrapped_conn = self._get_new_connection()
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 498, in _get_new_connection
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     wrapped_conn = self._connect(self._uri, self._read_only)
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 359, in _connect
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     return self._libvirt_proxy.openAuth(uri, auth, flags)
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 186, in doit
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     result = proxy_call(self._autowrap, f, *args, **kwargs)
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 144, in proxy_call
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     rv = execute(f, *args, **kwargs)
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 125, in execute
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     raise e.with_traceback(tb)
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 82, in tworker
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     rv = meth(*args, **kwargs)
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host          ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host   File "/usr/lib/python3/dist-packages/libvirt.py", line 147, in openAuth
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host     raise libvirtError('virConnectOpenAuth() failed')
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host libvirt.libvirtError: unable to connect to server at '10.0.55.7:16509': Connection refused
+2025-07-27 22:29:04.661 2 ERROR nova.virt.libvirt.host 
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task [None req-0e13a2f6-1296-44da-8973-80bea8b22152 - - - - - -] Error during ComputeManager.update_available_resource: nova.exception.HypervisorUnavailable: Connection to the hypervisor is broken on host
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task Traceback (most recent call last):
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 582, in get_connection
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     conn = self._get_connection()
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task            ^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 556, in _get_connection
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     with excutils.save_and_reraise_exception():
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 227, in __exit__
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     self.force_reraise()
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 200, in force_reraise
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     raise self.value
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 554, in _get_connection
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     self._wrapped_conn = self._get_new_connection()
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 498, in _get_new_connection
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     wrapped_conn = self._connect(self._uri, self._read_only)
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 359, in _connect
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     return self._libvirt_proxy.openAuth(uri, auth, flags)
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 186, in doit
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     result = proxy_call(self._autowrap, f, *args, **kwargs)
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 144, in proxy_call
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     rv = execute(f, *args, **kwargs)
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 125, in execute
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     raise e.with_traceback(tb)
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 82, in tworker
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     rv = meth(*args, **kwargs)
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task          ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/usr/lib/python3/dist-packages/libvirt.py", line 147, in openAuth
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     raise libvirtError('virConnectOpenAuth() failed')
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task libvirt.libvirtError: unable to connect to server at '10.0.55.7:16509': Connection refused
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task During handling of the above exception, another exception occurred:
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task Traceback (most recent call last):
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_service/periodic_task.py", line 216, in run_periodic_tasks
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     task(self, context)
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/compute/manager.py", line 11286, in update_available_resource
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     nodenames = set(self.driver.get_available_nodes())
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/driver.py", line 12104, in get_available_nodes
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     return [self._host.get_hostname()]
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task             ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 1052, in get_hostname
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     hostname = self.get_connection().getHostname()
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task                ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 592, in get_connection
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task     raise exception.HypervisorUnavailable()
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task nova.exception.HypervisorUnavailable: Connection to the hypervisor is broken on host
+2025-07-27 22:29:04.674 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host [None req-0e13a2f6-1296-44da-8973-80bea8b22152 - - - - - -] Connection to libvirt failed: unable to connect to server at '10.0.55.7:16509': Connection refused: libvirt.libvirtError: unable to connect to server at '10.0.55.7:16509': Connection refused
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host Traceback (most recent call last):
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 582, in get_connection
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     conn = self._get_connection()
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host            ^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 556, in _get_connection
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     with excutils.save_and_reraise_exception():
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 227, in __exit__
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     self.force_reraise()
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 200, in force_reraise
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     raise self.value
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 554, in _get_connection
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     self._wrapped_conn = self._get_new_connection()
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 498, in _get_new_connection
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     wrapped_conn = self._connect(self._uri, self._read_only)
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 359, in _connect
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     return self._libvirt_proxy.openAuth(uri, auth, flags)
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 186, in doit
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     result = proxy_call(self._autowrap, f, *args, **kwargs)
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 144, in proxy_call
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     rv = execute(f, *args, **kwargs)
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 125, in execute
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     raise e.with_traceback(tb)
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 82, in tworker
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     rv = meth(*args, **kwargs)
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host          ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host   File "/usr/lib/python3/dist-packages/libvirt.py", line 147, in openAuth
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host     raise libvirtError('virConnectOpenAuth() failed')
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host libvirt.libvirtError: unable to connect to server at '10.0.55.7:16509': Connection refused
+2025-07-27 22:29:19.781 2 ERROR nova.virt.libvirt.host 
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task [None req-fe0844a3-816e-4b7c-a153-4e4863929414 - - - - - -] Error during ComputeManager._cleanup_running_deleted_instances: nova.exception.HypervisorUnavailable: Connection to the hypervisor is broken on host
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task Traceback (most recent call last):
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 582, in get_connection
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     conn = self._get_connection()
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task            ^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 556, in _get_connection
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     with excutils.save_and_reraise_exception():
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 227, in __exit__
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     self.force_reraise()
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 200, in force_reraise
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     raise self.value
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 554, in _get_connection
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     self._wrapped_conn = self._get_new_connection()
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 498, in _get_new_connection
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     wrapped_conn = self._connect(self._uri, self._read_only)
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 359, in _connect
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     return self._libvirt_proxy.openAuth(uri, auth, flags)
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 186, in doit
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     result = proxy_call(self._autowrap, f, *args, **kwargs)
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 144, in proxy_call
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     rv = execute(f, *args, **kwargs)
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 125, in execute
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     raise e.with_traceback(tb)
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 82, in tworker
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     rv = meth(*args, **kwargs)
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task          ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/usr/lib/python3/dist-packages/libvirt.py", line 147, in openAuth
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     raise libvirtError('virConnectOpenAuth() failed')
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task libvirt.libvirtError: unable to connect to server at '10.0.55.7:16509': Connection refused
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task During handling of the above exception, another exception occurred:
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task Traceback (most recent call last):
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_service/periodic_task.py", line 216, in run_periodic_tasks
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     task(self, context)
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/compute/manager.py", line 11402, in _cleanup_running_deleted_instances
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     instances = self._running_deleted_instances(context)
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/compute/manager.py", line 11457, in _running_deleted_instances
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     instances = self._get_instances_on_driver(context, filters)
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/compute/manager.py", line 745, in _get_instances_on_driver
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     driver_uuids = self.driver.list_instance_uuids()
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/driver.py", line 1532, in list_instance_uuids
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     for guest in self._host.list_guests(only_running=False):
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 701, in list_guests
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     domains = self.list_instance_domains(only_running=only_running)
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 724, in list_instance_domains
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     for dom in self.get_connection().listAllDomains(flags))
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task                ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 592, in get_connection
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task     raise exception.HypervisorUnavailable()
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task nova.exception.HypervisorUnavailable: Connection to the hypervisor is broken on host
+2025-07-27 22:29:19.785 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host [None req-fe0844a3-816e-4b7c-a153-4e4863929414 - - - - - -] Connection to libvirt failed: unable to connect to server at '10.0.55.7:16509': Connection refused: libvirt.libvirtError: unable to connect to server at '10.0.55.7:16509': Connection refused
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host Traceback (most recent call last):
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 582, in get_connection
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     conn = self._get_connection()
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host            ^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 556, in _get_connection
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     with excutils.save_and_reraise_exception():
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 227, in __exit__
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     self.force_reraise()
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 200, in force_reraise
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     raise self.value
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 554, in _get_connection
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     self._wrapped_conn = self._get_new_connection()
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 498, in _get_new_connection
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     wrapped_conn = self._connect(self._uri, self._read_only)
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 359, in _connect
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     return self._libvirt_proxy.openAuth(uri, auth, flags)
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 186, in doit
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     result = proxy_call(self._autowrap, f, *args, **kwargs)
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 144, in proxy_call
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     rv = execute(f, *args, **kwargs)
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 125, in execute
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     raise e.with_traceback(tb)
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 82, in tworker
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     rv = meth(*args, **kwargs)
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host          ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host   File "/usr/lib/python3/dist-packages/libvirt.py", line 147, in openAuth
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host     raise libvirtError('virConnectOpenAuth() failed')
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host libvirt.libvirtError: unable to connect to server at '10.0.55.7:16509': Connection refused
+2025-07-27 22:30:06.166 2 ERROR nova.virt.libvirt.host 
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task [None req-6cab8991-6122-41d5-9fdd-053a6ea4b1c0 - - - - - -] Error during ComputeManager.update_available_resource: nova.exception.HypervisorUnavailable: Connection to the hypervisor is broken on host
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task Traceback (most recent call last):
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 582, in get_connection
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     conn = self._get_connection()
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task            ^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 556, in _get_connection
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     with excutils.save_and_reraise_exception():
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 227, in __exit__
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     self.force_reraise()
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 200, in force_reraise
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     raise self.value
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 554, in _get_connection
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     self._wrapped_conn = self._get_new_connection()
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 498, in _get_new_connection
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     wrapped_conn = self._connect(self._uri, self._read_only)
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 359, in _connect
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     return self._libvirt_proxy.openAuth(uri, auth, flags)
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 186, in doit
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     result = proxy_call(self._autowrap, f, *args, **kwargs)
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 144, in proxy_call
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     rv = execute(f, *args, **kwargs)
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 125, in execute
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     raise e.with_traceback(tb)
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 82, in tworker
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     rv = meth(*args, **kwargs)
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task          ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/usr/lib/python3/dist-packages/libvirt.py", line 147, in openAuth
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     raise libvirtError('virConnectOpenAuth() failed')
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task libvirt.libvirtError: unable to connect to server at '10.0.55.7:16509': Connection refused
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task During handling of the above exception, another exception occurred:
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task Traceback (most recent call last):
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_service/periodic_task.py", line 216, in run_periodic_tasks
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     task(self, context)
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/compute/manager.py", line 11286, in update_available_resource
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     nodenames = set(self.driver.get_available_nodes())
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/driver.py", line 12104, in get_available_nodes
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     return [self._host.get_hostname()]
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task             ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 1052, in get_hostname
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     hostname = self.get_connection().getHostname()
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task                ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 592, in get_connection
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task     raise exception.HypervisorUnavailable()
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task nova.exception.HypervisorUnavailable: Connection to the hypervisor is broken on host
+2025-07-27 22:30:06.170 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host [None req-6cab8991-6122-41d5-9fdd-053a6ea4b1c0 - - - - - -] Connection to libvirt failed: authentication failed: authentication failed: libvirt.libvirtError: authentication failed: authentication failed
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host Traceback (most recent call last):
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 582, in get_connection
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     conn = self._get_connection()
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host            ^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 556, in _get_connection
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     with excutils.save_and_reraise_exception():
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 227, in __exit__
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     self.force_reraise()
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 200, in force_reraise
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     raise self.value
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 554, in _get_connection
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     self._wrapped_conn = self._get_new_connection()
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 498, in _get_new_connection
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     wrapped_conn = self._connect(self._uri, self._read_only)
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 359, in _connect
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     return self._libvirt_proxy.openAuth(uri, auth, flags)
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 186, in doit
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     result = proxy_call(self._autowrap, f, *args, **kwargs)
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 144, in proxy_call
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     rv = execute(f, *args, **kwargs)
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 125, in execute
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     raise e.with_traceback(tb)
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 82, in tworker
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     rv = meth(*args, **kwargs)
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host          ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host   File "/usr/lib/python3/dist-packages/libvirt.py", line 147, in openAuth
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host     raise libvirtError('virConnectOpenAuth() failed')
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host libvirt.libvirtError: authentication failed: authentication failed
+2025-07-27 22:31:07.668 2 ERROR nova.virt.libvirt.host 
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task [None req-86c1b059-7a00-45d4-8538-4de3aabf2e93 - - - - - -] Error during ComputeManager.update_available_resource: nova.exception.HypervisorUnavailable: Connection to the hypervisor is broken on host
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task Traceback (most recent call last):
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 582, in get_connection
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     conn = self._get_connection()
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task            ^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 556, in _get_connection
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     with excutils.save_and_reraise_exception():
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 227, in __exit__
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     self.force_reraise()
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_utils/excutils.py", line 200, in force_reraise
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     raise self.value
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 554, in _get_connection
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     self._wrapped_conn = self._get_new_connection()
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 498, in _get_new_connection
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     wrapped_conn = self._connect(self._uri, self._read_only)
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 359, in _connect
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     return self._libvirt_proxy.openAuth(uri, auth, flags)
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 186, in doit
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     result = proxy_call(self._autowrap, f, *args, **kwargs)
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 144, in proxy_call
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     rv = execute(f, *args, **kwargs)
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 125, in execute
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     raise e.with_traceback(tb)
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/eventlet/tpool.py", line 82, in tworker
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     rv = meth(*args, **kwargs)
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task          ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/usr/lib/python3/dist-packages/libvirt.py", line 147, in openAuth
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     raise libvirtError('virConnectOpenAuth() failed')
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task libvirt.libvirtError: authentication failed: authentication failed
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task During handling of the above exception, another exception occurred:
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task Traceback (most recent call last):
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/oslo_service/periodic_task.py", line 216, in run_periodic_tasks
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     task(self, context)
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/compute/manager.py", line 11286, in update_available_resource
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     nodenames = set(self.driver.get_available_nodes())
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/driver.py", line 12104, in get_available_nodes
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     return [self._host.get_hostname()]
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task             ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 1052, in get_hostname
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     hostname = self.get_connection().getHostname()
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task                ^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/host.py", line 592, in get_connection
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task     raise exception.HypervisorUnavailable()
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task nova.exception.HypervisorUnavailable: Connection to the hypervisor is broken on host
+2025-07-27 22:31:07.671 2 ERROR oslo_service.periodic_task 
+2025-07-27 22:31:22.698 2 INFO os_vif [-] Loaded VIF plugins: linux_bridge, noop, ovs
+2025-07-27 22:31:22.883 2 INFO oslo_service.periodic_task [-] Skipping periodic task _heal_instance_info_cache because its interval is negative
+2025-07-27 22:31:22.887 2 WARNING oslo_config.cfg [None req-0d3cfb68-eaf7-4a79-b89e-7dc21c9ec02d - - - - - -] Deprecated: Option "heartbeat_in_pthread" from group "oslo_messaging_rabbit" is deprecated for removal (The option is related to Eventlet which will be removed. In addition this has never worked as expected with services using eventlet for core service framework.).  Its value may be silently ignored in the future.
+2025-07-27 22:31:23.808 2 INFO nova.virt.driver [None req-0d3cfb68-eaf7-4a79-b89e-7dc21c9ec02d - - - - - -] Loading compute driver 'libvirt.LibvirtDriver'
+2025-07-27 22:31:23.980 2 INFO nova.compute.provider_config [None req-0d3cfb68-eaf7-4a79-b89e-7dc21c9ec02d - - - - - -] No provider configs found in /etc/nova/provider_config/. If files are present, ensure the Nova process has access.
+2025-07-27 22:31:24.501 2 WARNING oslo_config.cfg [None req-0d3cfb68-eaf7-4a79-b89e-7dc21c9ec02d - - - - - -] Deprecated: Option "api_servers" from group "glance" is deprecated for removal (
+Support for image service configuration via standard keystoneauth1 Adapter
+options was added in the 17.0.0 Queens release. The api_servers option was
+retained temporarily to allow consumers time to cut over to a real load
+balancing solution.
+).  Its value may be silently ignored in the future.
+2025-07-27 22:31:24.532 2 INFO nova.service [-] Starting compute node (version 31.0.1)
+2025-07-27 22:31:25.042 2 INFO nova.virt.node [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Determined node identity aeabab3e-ce97-4ee2-9f4c-74192c1d84bb from /var/lib/nova/compute_id
+2025-07-27 22:31:25.077 2 INFO nova.virt.libvirt.driver [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Connection event '1' reason 'None'
+2025-07-27 22:31:26.654 2 WARNING nova.virt.libvirt.driver [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] An error occurred while updating compute node resource provider status to "enabled" for provider: aeabab3e-ce97-4ee2-9f4c-74192c1d84bb: ValueError: No such provider aeabab3e-ce97-4ee2-9f4c-74192c1d84bb
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver Traceback (most recent call last):
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/virt/libvirt/driver.py", line 5661, in _update_compute_provider_status
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver     self.virtapi.update_compute_provider_status(
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/compute/manager.py", line 616, in update_compute_provider_status
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver     self.reportclient.set_traits_for_provider(
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/scheduler/client/report.py", line 120, in wrapper
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver     return f(self, *a, **k)
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver            ^^^^^^^^^^^^^^^^
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/scheduler/client/report.py", line 1092, in set_traits_for_provider
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver     if not self._provider_tree.have_traits_changed(rp_uuid, traits):
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/compute/provider_tree.py", line 584, in have_traits_changed
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver     provider = self._find_with_lock(name_or_uuid)
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver   File "/var/lib/kolla/venv/lib/python3.12/site-packages/nova/compute/provider_tree.py", line 440, in _find_with_lock
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver     raise ValueError(_("No such provider %s") % name_or_uuid)
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver ValueError: No such provider aeabab3e-ce97-4ee2-9f4c-74192c1d84bb
+2025-07-27 22:31:26.654 2 ERROR nova.virt.libvirt.driver 
+2025-07-27 22:31:35.354 2 INFO nova.virt.libvirt.host [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Libvirt host capabilities <capabilities>
+
+  <host>
+    <uuid>00000000-0000-0000-0000-0cc47a6652b4</uuid>
+    <cpu>
+      <arch>x86_64</arch>
+      <model>Broadwell-IBRS</model>
+      <vendor>Intel</vendor>
+      <microcode version='184549440'/>
+      <signature family='6' model='79' stepping='1'/>
+      <counter name='tsc' frequency='2299997000' scaling='no'/>
+      <topology sockets='1' dies='1' cores='18' threads='2'/>
+      <maxphysaddr mode='emulate' bits='46'/>
+      <feature name='vme'/>
+      <feature name='ds'/>
+      <feature name='acpi'/>
+      <feature name='ss'/>
+      <feature name='ht'/>
+      <feature name='tm'/>
+      <feature name='pbe'/>
+      <feature name='dtes64'/>
+      <feature name='monitor'/>
+      <feature name='ds_cpl'/>
+      <feature name='vmx'/>
+      <feature name='smx'/>
+      <feature name='est'/>
+      <feature name='tm2'/>
+      <feature name='xtpr'/>
+      <feature name='pdcm'/>
+      <feature name='dca'/>
+      <feature name='osxsave'/>
+      <feature name='f16c'/>
+      <feature name='rdrand'/>
+      <feature name='arat'/>
+      <feature name='tsc_adjust'/>
+      <feature name='cmt'/>
+      <feature name='intel-pt'/>
+      <feature name='md-clear'/>
+      <feature name='stibp'/>
+      <feature name='flush-l1d'/>
+      <feature name='ssbd'/>
+      <feature name='xsaveopt'/>
+      <feature name='mbm_total'/>
+      <feature name='mbm_local'/>
+      <feature name='pdpe1gb'/>
+      <feature name='abm'/>
+      <feature name='invtsc'/>
+      <pages unit='KiB' size='4'/>
+      <pages unit='KiB' size='2048'/>
+      <pages unit='KiB' size='1048576'/>
+    </cpu>
+    <power_management>
+      <suspend_mem/>
+    </power_management>
+    <iommu support='yes'/>
+    <migration_features>
+      <live/>
+      <uri_transports>
+        <uri_transport>tcp</uri_transport>
+        <uri_transport>rdma</uri_transport>
+      </uri_transports>
+    </migration_features>
+    <topology>
+      <cells num='2'>
+        <cell id='0'>
+          <memory unit='KiB'>264001588</memory>
+          <pages unit='KiB' size='4'>66000397</pages>
+          <pages unit='KiB' size='2048'>0</pages>
+          <pages unit='KiB' size='1048576'>0</pages>
+          <distances>
+            <sibling id='0' value='10'/>
+            <sibling id='1' value='21'/>
+          </distances>
+          <cpus num='36'>
+            <cpu id='0' socket_id='0' die_id='0' core_id='0' siblings='0,36'/>
+            <cpu id='1' socket_id='0' die_id='0' core_id='1' siblings='1,37'/>
+            <cpu id='2' socket_id='0' die_id='0' core_id='2' siblings='2,38'/>
+            <cpu id='3' socket_id='0' die_id='0' core_id='3' siblings='3,39'/>
+            <cpu id='4' socket_id='0' die_id='0' core_id='4' siblings='4,40'/>
+            <cpu id='5' socket_id='0' die_id='0' core_id='8' siblings='5,41'/>
+            <cpu id='6' socket_id='0' die_id='0' core_id='9' siblings='6,42'/>
+            <cpu id='7' socket_id='0' die_id='0' core_id='10' siblings='7,43'/>
+            <cpu id='8' socket_id='0' die_id='0' core_id='11' siblings='8,44'/>
+            <cpu id='9' socket_id='0' die_id='0' core_id='16' siblings='9,45'/>
+            <cpu id='10' socket_id='0' die_id='0' core_id='17' siblings='10,46'/>
+            <cpu id='11' socket_id='0' die_id='0' core_id='18' siblings='11,47'/>
+            <cpu id='12' socket_id='0' die_id='0' core_id='19' siblings='12,48'/>
+            <cpu id='13' socket_id='0' die_id='0' core_id='20' siblings='13,49'/>
+            <cpu id='14' socket_id='0' die_id='0' core_id='24' siblings='14,50'/>
+            <cpu id='15' socket_id='0' die_id='0' core_id='25' siblings='15,51'/>
+            <cpu id='16' socket_id='0' die_id='0' core_id='26' siblings='16,52'/>
+            <cpu id='17' socket_id='0' die_id='0' core_id='27' siblings='17,53'/>
+            <cpu id='36' socket_id='0' die_id='0' core_id='0' siblings='0,36'/>
+            <cpu id='37' socket_id='0' die_id='0' core_id='1' siblings='1,37'/>
+            <cpu id='38' socket_id='0' die_id='0' core_id='2' siblings='2,38'/>
+            <cpu id='39' socket_id='0' die_id='0' core_id='3' siblings='3,39'/>
+            <cpu id='40' socket_id='0' die_id='0' core_id='4' siblings='4,40'/>
+            <cpu id='41' socket_id='0' die_id='0' core_id='8' siblings='5,41'/>
+            <cpu id='42' socket_id='0' die_id='0' core_id='9' siblings='6,42'/>
+            <cpu id='43' socket_id='0' die_id='0' core_id='10' siblings='7,43'/>
+            <cpu id='44' socket_id='0' die_id='0' core_id='11' siblings='8,44'/>
+            <cpu id='45' socket_id='0' die_id='0' core_id='16' siblings='9,45'/>
+            <cpu id='46' socket_id='0' die_id='0' core_id='17' siblings='10,46'/>
+            <cpu id='47' socket_id='0' die_id='0' core_id='18' siblings='11,47'/>
+            <cpu id='48' socket_id='0' die_id='0' core_id='19' siblings='12,48'/>
+            <cpu id='49' socket_id='0' die_id='0' core_id='20' siblings='13,49'/>
+            <cpu id='50' socket_id='0' die_id='0' core_id='24' siblings='14,50'/>
+            <cpu id='51' socket_id='0' die_id='0' core_id='25' siblings='15,51'/>
+            <cpu id='52' socket_id='0' die_id='0' core_id='26' siblings='16,52'/>
+            <cpu id='53' socket_id='0' die_id='0' core_id='27' siblings='17,53'/>
+          </cpus>
+        </cell>
+        <cell id='1'>
+          <memory unit='KiB'>264222124</memory>
+          <pages unit='KiB' size='4'>66055531</pages>
+          <pages unit='KiB' size='2048'>0</pages>
+          <pages unit='KiB' size='1048576'>0</pages>
+          <distances>
+            <sibling id='0' value='21'/>
+            <sibling id='1' value='10'/>
+          </distances>
+          <cpus num='36'>
+            <cpu id='18' socket_id='1' die_id='1' core_id='0' siblings='18,54'/>
+            <cpu id='19' socket_id='1' die_id='1' core_id='1' siblings='19,55'/>
+            <cpu id='20' socket_id='1' die_id='1' core_id='2' siblings='20,56'/>
+            <cpu id='21' socket_id='1' die_id='1' core_id='3' siblings='21,57'/>
+            <cpu id='22' socket_id='1' die_id='1' core_id='4' siblings='22,58'/>
+            <cpu id='23' socket_id='1' die_id='1' core_id='8' siblings='23,59'/>
+            <cpu id='24' socket_id='1' die_id='1' core_id='9' siblings='24,60'/>
+            <cpu id='25' socket_id='1' die_id='1' core_id='10' siblings='25,61'/>
+            <cpu id='26' socket_id='1' die_id='1' core_id='11' siblings='26,62'/>
+            <cpu id='27' socket_id='1' die_id='1' core_id='16' siblings='27,63'/>
+            <cpu id='28' socket_id='1' die_id='1' core_id='17' siblings='28,64'/>
+            <cpu id='29' socket_id='1' die_id='1' core_id='18' siblings='29,65'/>
+            <cpu id='30' socket_id='1' die_id='1' core_id='19' siblings='30,66'/>
+            <cpu id='31' socket_id='1' die_id='1' core_id='20' siblings='31,67'/>
+            <cpu id='32' socket_id='1' die_id='1' core_id='24' siblings='32,68'/>
+            <cpu id='33' socket_id='1' die_id='1' core_id='25' siblings='33,69'/>
+            <cpu id='34' socket_id='1' die_id='1' core_id='26' siblings='34,70'/>
+            <cpu id='35' socket_id='1' die_id='1' core_id='27' siblings='35,71'/>
+            <cpu id='54' socket_id='1' die_id='1' core_id='0' siblings='18,54'/>
+            <cpu id='55' socket_id='1' die_id='1' core_id='1' siblings='19,55'/>
+            <cpu id='56' socket_id='1' die_id='1' core_id='2' siblings='20,56'/>
+            <cpu id='57' socket_id='1' die_id='1' core_id='3' siblings='21,57'/>
+            <cpu id='58' socket_id='1' die_id='1' core_id='4' siblings='22,58'/>
+            <cpu id='59' socket_id='1' die_id='1' core_id='8' siblings='23,59'/>
+            <cpu id='60' socket_id='1' die_id='1' core_id='9' siblings='24,60'/>
+            <cpu id='61' socket_id='1' die_id='1' core_id='10' siblings='25,61'/>
+            <cpu id='62' socket_id='1' die_id='1' core_id='11' siblings='26,62'/>
+            <cpu id='63' socket_id='1' die_id='1' core_id='16' siblings='27,63'/>
+            <cpu id='64' socket_id='1' die_id='1' core_id='17' siblings='28,64'/>
+            <cpu id='65' socket_id='1' die_id='1' core_id='18' siblings='29,65'/>
+            <cpu id='66' socket_id='1' die_id='1' core_id='19' siblings='30,66'/>
+            <cpu id='67' socket_id='1' die_id='1' core_id='20' siblings='31,67'/>
+            <cpu id='68' socket_id='1' die_id='1' core_id='24' siblings='32,68'/>
+            <cpu id='69' socket_id='1' die_id='1' core_id='25' siblings='33,69'/>
+            <cpu id='70' socket_id='1' die_id='1' core_id='26' siblings='34,70'/>
+            <cpu id='71' socket_id='1' die_id='1' core_id='27' siblings='35,71'/>
+          </cpus>
+        </cell>
+      </cells>
+    </topology>
+    <cache>
+      <bank id='0' level='3' type='both' size='45' unit='MiB' cpus='0-17,36-53'/>
+      <bank id='1' level='3' type='both' size='45' unit='MiB' cpus='18-35,54-71'/>
+    </cache>
+    <secmodel>
+      <model>none</model>
+      <doi>0</doi>
+    </secmodel>
+    <secmodel>
+      <model>dac</model>
+      <doi>0</doi>
+      <baselabel type='kvm'>+42436:+42436</baselabel>
+      <baselabel type='qemu'>+42436:+42436</baselabel>
+    </secmodel>
+  </host>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='alpha'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-alpha</emulator>
+      <machine maxCpus='4'>clipper</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='armv6l'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-arm</emulator>
+      <machine maxCpus='512'>virt-8.2</machine>
+      <machine canonical='virt-8.2' maxCpus='512'>virt</machine>
+      <machine maxCpus='2'>qcom-dc-scm-v1-bmc</machine>
+      <machine maxCpus='2'>mori-bmc</machine>
+      <machine maxCpus='2'>ast2600-evb</machine>
+      <machine maxCpus='1'>borzoi</machine>
+      <machine maxCpus='1'>tiogapass-bmc</machine>
+      <machine maxCpus='1'>spitz</machine>
+      <machine maxCpus='255'>virt-2.7</machine>
+      <machine maxCpus='2'>nuri</machine>
+      <machine maxCpus='2'>mcimx7d-sabre</machine>
+      <machine maxCpus='1'>romulus-bmc</machine>
+      <machine maxCpus='512'>virt-3.0</machine>
+      <machine maxCpus='512'>virt-5.0</machine>
+      <machine maxCpus='2'>npcm750-evb</machine>
+      <machine maxCpus='255'>virt-2.10</machine>
+      <machine maxCpus='2'>rainier-bmc</machine>
+      <machine maxCpus='1'>mps3-an547</machine>
+      <machine maxCpus='2'>musca-b1</machine>
+      <machine maxCpus='4'>realview-pbx-a9</machine>
+      <machine maxCpus='1'>versatileab</machine>
+      <machine maxCpus='1'>kzm</machine>
+      <machine maxCpus='255'>virt-2.8</machine>
+      <machine maxCpus='2'>fby35-bmc</machine>
+      <machine maxCpus='2'>musca-a</machine>
+      <machine maxCpus='512'>virt-3.1</machine>
+      <machine maxCpus='1'>mcimx6ul-evk</machine>
+      <machine maxCpus='512'>virt-5.1</machine>
+      <machine maxCpus='2'>smdkc210</machine>
+      <machine maxCpus='1'>sx1</machine>
+      <machine maxCpus='255'>virt-2.11</machine>
+      <machine maxCpus='1'>imx25-pdk</machine>
+      <machine maxCpus='1'>stm32vldiscovery</machine>
+      <machine maxCpus='255'>virt-2.9</machine>
+      <machine maxCpus='4'>orangepi-pc</machine>
+      <machine maxCpus='1'>quanta-q71l-bmc</machine>
+      <machine maxCpus='1'>z2</machine>
+      <machine maxCpus='512'>virt-5.2</machine>
+      <machine maxCpus='1'>xilinx-zynq-a9</machine>
+      <machine maxCpus='1'>tosa</machine>
+      <machine maxCpus='1'>mps2-an500</machine>
+      <machine maxCpus='255'>virt-2.12</machine>
+      <machine maxCpus='2'>mps2-an521</machine>
+      <machine maxCpus='4'>sabrelite</machine>
+      <machine maxCpus='1'>mps2-an511</machine>
+      <machine maxCpus='1'>canon-a1100</machine>
+      <machine maxCpus='1'>realview-eb</machine>
+      <machine maxCpus='2'>quanta-gbs-bmc</machine>
+      <machine maxCpus='1'>emcraft-sf2</machine>
+      <machine maxCpus='1'>realview-pb-a8</machine>
+      <machine maxCpus='1'>yosemitev2-bmc</machine>
+      <machine maxCpus='512'>virt-7.0</machine>
+      <machine maxCpus='512'>virt-4.0</machine>
+      <machine maxCpus='1'>raspi1ap</machine>
+      <machine maxCpus='1'>palmetto-bmc</machine>
+      <machine maxCpus='1'>sx1-v1</machine>
+      <machine maxCpus='1'>n810</machine>
+      <machine maxCpus='1'>g220a-bmc</machine>
+      <machine maxCpus='1'>n800</machine>
+      <machine maxCpus='2'>bletchley-bmc</machine>
+      <machine maxCpus='512'>virt-7.1</machine>
+      <machine maxCpus='2'>tacoma-bmc</machine>
+      <machine maxCpus='512'>virt-4.1</machine>
+      <machine maxCpus='2'>quanta-gsj</machine>
+      <machine maxCpus='1'>versatilepb</machine>
+      <machine maxCpus='1'>terrier</machine>
+      <machine maxCpus='1'>mainstone</machine>
+      <machine maxCpus='4'>realview-eb-mpcore</machine>
+      <machine maxCpus='1'>integratorcp</machine>
+      <machine maxCpus='512'>virt-7.2</machine>
+      <machine maxCpus='1'>supermicrox11-bmc</machine>
+      <machine maxCpus='512'>virt-4.2</machine>
+      <machine maxCpus='1'>witherspoon-bmc</machine>
+      <machine maxCpus='2'>qcom-firework-bmc</machine>
+      <machine maxCpus='2'>mps3-an524</machine>
+      <machine maxCpus='2'>kudo-bmc</machine>
+      <machine maxCpus='4'>vexpress-a9</machine>
+      <machine maxCpus='4'>midway</machine>
+      <machine maxCpus='1'>musicpal</machine>
+      <machine maxCpus='1'>lm3s811evb</machine>
+      <machine maxCpus='1'>lm3s6965evb</machine>
+      <machine maxCpus='1'>supermicro-x11spi-bmc</machine>
+      <machine maxCpus='1'>microbit</machine>
+      <machine maxCpus='3'>fby35</machine>
+      <machine maxCpus='1'>mps2-an505</machine>
+      <machine maxCpus='1'>mps2-an385</machine>
+      <machine maxCpus='512'>virt-6.0</machine>
+      <machine maxCpus='512'>virt-8.0</machine>
+      <machine maxCpus='1'>cubieboard</machine>
+      <machine maxCpus='1'>ast1030-evb</machine>
+      <machine maxCpus='1'>verdex</machine>
+      <machine maxCpus='4'>bpim2u</machine>
+      <machine maxCpus='1'>netduino2</machine>
+      <machine maxCpus='1'>mps2-an386</machine>
+      <machine maxCpus='1'>olimex-stm32-h405</machine>
+      <machine maxCpus='512'>virt-6.1</machine>
+      <machine maxCpus='512'>virt-8.1</machine>
+      <machine maxCpus='4'>raspi2b</machine>
+      <machine maxCpus='4'>vexpress-a15</machine>
+      <machine maxCpus='2'>fuji-bmc</machine>
+      <machine maxCpus='512'>virt-6.2</machine>
+      <machine maxCpus='1'>sonorapass-bmc</machine>
+      <machine maxCpus='1'>cheetah</machine>
+      <machine maxCpus='255'>virt-2.6</machine>
+      <machine maxCpus='1'>ast2500-evb</machine>
+      <machine maxCpus='4'>highbank</machine>
+      <machine maxCpus='1'>akita</machine>
+      <machine maxCpus='1'>connex</machine>
+      <machine maxCpus='1'>netduinoplus2</machine>
+      <machine maxCpus='1'>collie</machine>
+      <machine maxCpus='1'>raspi0</machine>
+      <machine maxCpus='1'>fp5280g2-bmc</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='armv7l'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-arm</emulator>
+      <machine maxCpus='512'>virt-8.2</machine>
+      <machine canonical='virt-8.2' maxCpus='512'>virt</machine>
+      <machine maxCpus='2'>qcom-dc-scm-v1-bmc</machine>
+      <machine maxCpus='2'>mori-bmc</machine>
+      <machine maxCpus='2'>ast2600-evb</machine>
+      <machine maxCpus='1'>borzoi</machine>
+      <machine maxCpus='1'>tiogapass-bmc</machine>
+      <machine maxCpus='1'>spitz</machine>
+      <machine maxCpus='255'>virt-2.7</machine>
+      <machine maxCpus='2'>nuri</machine>
+      <machine maxCpus='2'>mcimx7d-sabre</machine>
+      <machine maxCpus='1'>romulus-bmc</machine>
+      <machine maxCpus='512'>virt-3.0</machine>
+      <machine maxCpus='512'>virt-5.0</machine>
+      <machine maxCpus='2'>npcm750-evb</machine>
+      <machine maxCpus='255'>virt-2.10</machine>
+      <machine maxCpus='2'>rainier-bmc</machine>
+      <machine maxCpus='1'>mps3-an547</machine>
+      <machine maxCpus='2'>musca-b1</machine>
+      <machine maxCpus='4'>realview-pbx-a9</machine>
+      <machine maxCpus='1'>versatileab</machine>
+      <machine maxCpus='1'>kzm</machine>
+      <machine maxCpus='255'>virt-2.8</machine>
+      <machine maxCpus='2'>fby35-bmc</machine>
+      <machine maxCpus='2'>musca-a</machine>
+      <machine maxCpus='512'>virt-3.1</machine>
+      <machine maxCpus='1'>mcimx6ul-evk</machine>
+      <machine maxCpus='512'>virt-5.1</machine>
+      <machine maxCpus='2'>smdkc210</machine>
+      <machine maxCpus='1'>sx1</machine>
+      <machine maxCpus='255'>virt-2.11</machine>
+      <machine maxCpus='1'>imx25-pdk</machine>
+      <machine maxCpus='1'>stm32vldiscovery</machine>
+      <machine maxCpus='255'>virt-2.9</machine>
+      <machine maxCpus='4'>orangepi-pc</machine>
+      <machine maxCpus='1'>quanta-q71l-bmc</machine>
+      <machine maxCpus='1'>z2</machine>
+      <machine maxCpus='512'>virt-5.2</machine>
+      <machine maxCpus='1'>xilinx-zynq-a9</machine>
+      <machine maxCpus='1'>tosa</machine>
+      <machine maxCpus='1'>mps2-an500</machine>
+      <machine maxCpus='255'>virt-2.12</machine>
+      <machine maxCpus='2'>mps2-an521</machine>
+      <machine maxCpus='4'>sabrelite</machine>
+      <machine maxCpus='1'>mps2-an511</machine>
+      <machine maxCpus='1'>canon-a1100</machine>
+      <machine maxCpus='1'>realview-eb</machine>
+      <machine maxCpus='2'>quanta-gbs-bmc</machine>
+      <machine maxCpus='1'>emcraft-sf2</machine>
+      <machine maxCpus='1'>realview-pb-a8</machine>
+      <machine maxCpus='1'>yosemitev2-bmc</machine>
+      <machine maxCpus='512'>virt-7.0</machine>
+      <machine maxCpus='512'>virt-4.0</machine>
+      <machine maxCpus='1'>raspi1ap</machine>
+      <machine maxCpus='1'>palmetto-bmc</machine>
+      <machine maxCpus='1'>sx1-v1</machine>
+      <machine maxCpus='1'>n810</machine>
+      <machine maxCpus='1'>g220a-bmc</machine>
+      <machine maxCpus='1'>n800</machine>
+      <machine maxCpus='2'>bletchley-bmc</machine>
+      <machine maxCpus='512'>virt-7.1</machine>
+      <machine maxCpus='2'>tacoma-bmc</machine>
+      <machine maxCpus='512'>virt-4.1</machine>
+      <machine maxCpus='2'>quanta-gsj</machine>
+      <machine maxCpus='1'>versatilepb</machine>
+      <machine maxCpus='1'>terrier</machine>
+      <machine maxCpus='1'>mainstone</machine>
+      <machine maxCpus='4'>realview-eb-mpcore</machine>
+      <machine maxCpus='1'>integratorcp</machine>
+      <machine maxCpus='512'>virt-7.2</machine>
+      <machine maxCpus='1'>supermicrox11-bmc</machine>
+      <machine maxCpus='512'>virt-4.2</machine>
+      <machine maxCpus='1'>witherspoon-bmc</machine>
+      <machine maxCpus='2'>qcom-firework-bmc</machine>
+      <machine maxCpus='2'>mps3-an524</machine>
+      <machine maxCpus='2'>kudo-bmc</machine>
+      <machine maxCpus='4'>vexpress-a9</machine>
+      <machine maxCpus='4'>midway</machine>
+      <machine maxCpus='1'>musicpal</machine>
+      <machine maxCpus='1'>lm3s811evb</machine>
+      <machine maxCpus='1'>lm3s6965evb</machine>
+      <machine maxCpus='1'>supermicro-x11spi-bmc</machine>
+      <machine maxCpus='1'>microbit</machine>
+      <machine maxCpus='3'>fby35</machine>
+      <machine maxCpus='1'>mps2-an505</machine>
+      <machine maxCpus='1'>mps2-an385</machine>
+      <machine maxCpus='512'>virt-6.0</machine>
+      <machine maxCpus='512'>virt-8.0</machine>
+      <machine maxCpus='1'>cubieboard</machine>
+      <machine maxCpus='1'>ast1030-evb</machine>
+      <machine maxCpus='1'>verdex</machine>
+      <machine maxCpus='4'>bpim2u</machine>
+      <machine maxCpus='1'>netduino2</machine>
+      <machine maxCpus='1'>mps2-an386</machine>
+      <machine maxCpus='1'>olimex-stm32-h405</machine>
+      <machine maxCpus='512'>virt-6.1</machine>
+      <machine maxCpus='512'>virt-8.1</machine>
+      <machine maxCpus='4'>raspi2b</machine>
+      <machine maxCpus='4'>vexpress-a15</machine>
+      <machine maxCpus='2'>fuji-bmc</machine>
+      <machine maxCpus='512'>virt-6.2</machine>
+      <machine maxCpus='1'>sonorapass-bmc</machine>
+      <machine maxCpus='1'>cheetah</machine>
+      <machine maxCpus='255'>virt-2.6</machine>
+      <machine maxCpus='1'>ast2500-evb</machine>
+      <machine maxCpus='4'>highbank</machine>
+      <machine maxCpus='1'>akita</machine>
+      <machine maxCpus='1'>connex</machine>
+      <machine maxCpus='1'>netduinoplus2</machine>
+      <machine maxCpus='1'>collie</machine>
+      <machine maxCpus='1'>raspi0</machine>
+      <machine maxCpus='1'>fp5280g2-bmc</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='aarch64'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-aarch64</emulator>
+      <machine maxCpus='512'>virt-8.2</machine>
+      <machine canonical='virt-8.2' maxCpus='512'>virt</machine>
+      <machine maxCpus='2'>qcom-dc-scm-v1-bmc</machine>
+      <machine maxCpus='2'>mori-bmc</machine>
+      <machine maxCpus='2'>ast2600-evb</machine>
+      <machine maxCpus='1'>borzoi</machine>
+      <machine maxCpus='1'>tiogapass-bmc</machine>
+      <machine maxCpus='1'>spitz</machine>
+      <machine maxCpus='255'>virt-2.7</machine>
+      <machine maxCpus='2'>nuri</machine>
+      <machine maxCpus='2'>mcimx7d-sabre</machine>
+      <machine maxCpus='1'>romulus-bmc</machine>
+      <machine maxCpus='512'>virt-3.0</machine>
+      <machine maxCpus='512'>virt-5.0</machine>
+      <machine maxCpus='2'>npcm750-evb</machine>
+      <machine maxCpus='255'>virt-2.10</machine>
+      <machine maxCpus='2'>rainier-bmc</machine>
+      <machine maxCpus='1'>mps3-an547</machine>
+      <machine maxCpus='255'>virt-2.8</machine>
+      <machine maxCpus='2'>musca-b1</machine>
+      <machine maxCpus='4'>realview-pbx-a9</machine>
+      <machine maxCpus='1'>versatileab</machine>
+      <machine maxCpus='1'>kzm</machine>
+      <machine maxCpus='2'>fby35-bmc</machine>
+      <machine maxCpus='2'>musca-a</machine>
+      <machine maxCpus='512'>virt-3.1</machine>
+      <machine maxCpus='1'>mcimx6ul-evk</machine>
+      <machine maxCpus='512'>virt-5.1</machine>
+      <machine maxCpus='2'>smdkc210</machine>
+      <machine maxCpus='1'>sx1</machine>
+      <machine maxCpus='255'>virt-2.11</machine>
+      <machine maxCpus='1'>imx25-pdk</machine>
+      <machine maxCpus='1'>stm32vldiscovery</machine>
+      <machine maxCpus='255'>virt-2.9</machine>
+      <machine maxCpus='4'>orangepi-pc</machine>
+      <machine maxCpus='1'>quanta-q71l-bmc</machine>
+      <machine maxCpus='1'>z2</machine>
+      <machine maxCpus='512'>virt-5.2</machine>
+      <machine maxCpus='1'>xilinx-zynq-a9</machine>
+      <machine maxCpus='6'>xlnx-zcu102</machine>
+      <machine maxCpus='1'>tosa</machine>
+      <machine maxCpus='1'>mps2-an500</machine>
+      <machine maxCpus='255'>virt-2.12</machine>
+      <machine maxCpus='2'>mps2-an521</machine>
+      <machine maxCpus='4'>sabrelite</machine>
+      <machine maxCpus='1'>mps2-an511</machine>
+      <machine maxCpus='1'>canon-a1100</machine>
+      <machine maxCpus='1'>realview-eb</machine>
+      <machine maxCpus='2'>quanta-gbs-bmc</machine>
+      <machine maxCpus='1'>emcraft-sf2</machine>
+      <machine maxCpus='1'>realview-pb-a8</machine>
+      <machine maxCpus='512'>sbsa-ref</machine>
+      <machine maxCpus='1'>yosemitev2-bmc</machine>
+      <machine maxCpus='512'>virt-7.0</machine>
+      <machine maxCpus='512'>virt-4.0</machine>
+      <machine maxCpus='1'>raspi1ap</machine>
+      <machine maxCpus='1'>palmetto-bmc</machine>
+      <machine maxCpus='1'>sx1-v1</machine>
+      <machine maxCpus='1'>n810</machine>
+      <machine maxCpus='1'>g220a-bmc</machine>
+      <machine maxCpus='1'>n800</machine>
+      <machine maxCpus='2'>bletchley-bmc</machine>
+      <machine maxCpus='512'>virt-7.1</machine>
+      <machine maxCpus='2'>tacoma-bmc</machine>
+      <machine maxCpus='512'>virt-4.1</machine>
+      <machine maxCpus='2'>quanta-gsj</machine>
+      <machine maxCpus='1'>versatilepb</machine>
+      <machine maxCpus='1'>terrier</machine>
+      <machine maxCpus='1'>mainstone</machine>
+      <machine maxCpus='4'>realview-eb-mpcore</machine>
+      <machine maxCpus='1'>integratorcp</machine>
+      <machine maxCpus='512'>virt-7.2</machine>
+      <machine maxCpus='1'>supermicrox11-bmc</machine>
+      <machine maxCpus='512'>virt-4.2</machine>
+      <machine maxCpus='1'>witherspoon-bmc</machine>
+      <machine maxCpus='2'>qcom-firework-bmc</machine>
+      <machine maxCpus='2'>mps3-an524</machine>
+      <machine maxCpus='2'>kudo-bmc</machine>
+      <machine maxCpus='4'>vexpress-a9</machine>
+      <machine maxCpus='4'>midway</machine>
+      <machine maxCpus='1'>musicpal</machine>
+      <machine maxCpus='1'>lm3s811evb</machine>
+      <machine maxCpus='1'>lm3s6965evb</machine>
+      <machine maxCpus='1'>supermicro-x11spi-bmc</machine>
+      <machine maxCpus='1'>microbit</machine>
+      <machine maxCpus='3'>fby35</machine>
+      <machine maxCpus='1'>mps2-an505</machine>
+      <machine maxCpus='1'>mps2-an385</machine>
+      <machine maxCpus='512'>virt-6.0</machine>
+      <machine maxCpus='512'>virt-8.0</machine>
+      <machine maxCpus='4'>raspi3ap</machine>
+      <machine maxCpus='1'>cubieboard</machine>
+      <machine maxCpus='1'>ast1030-evb</machine>
+      <machine maxCpus='1'>verdex</machine>
+      <machine maxCpus='4'>bpim2u</machine>
+      <machine maxCpus='1'>netduino2</machine>
+      <machine maxCpus='4'>xlnx-versal-virt</machine>
+      <machine maxCpus='1'>mps2-an386</machine>
+      <machine maxCpus='1'>olimex-stm32-h405</machine>
+      <machine maxCpus='512'>virt-6.1</machine>
+      <machine maxCpus='512'>virt-8.1</machine>
+      <machine maxCpus='4'>raspi3b</machine>
+      <machine maxCpus='4'>raspi2b</machine>
+      <machine maxCpus='4'>vexpress-a15</machine>
+      <machine maxCpus='2'>fuji-bmc</machine>
+      <machine maxCpus='512'>virt-6.2</machine>
+      <machine maxCpus='1'>sonorapass-bmc</machine>
+      <machine maxCpus='1'>cheetah</machine>
+      <machine maxCpus='255'>virt-2.6</machine>
+      <machine maxCpus='1'>ast2500-evb</machine>
+      <machine maxCpus='4'>highbank</machine>
+      <machine maxCpus='1'>akita</machine>
+      <machine maxCpus='1'>connex</machine>
+      <machine maxCpus='1'>netduinoplus2</machine>
+      <machine maxCpus='1'>collie</machine>
+      <machine maxCpus='1'>raspi0</machine>
+      <machine maxCpus='1'>fp5280g2-bmc</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <acpi default='on' toggle='yes'/>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='cris'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-cris</emulator>
+      <machine maxCpus='1'>axis-dev88</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='i686'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-i386</emulator>
+      <machine maxCpus='255'>pc-i440fx-noble</machine>
+      <machine canonical='pc-i440fx-noble' maxCpus='255'>ubuntu</machine>
+      <machine maxCpus='288'>pc-q35-mantic</machine>
+      <machine maxCpus='255'>pc-i440fx-impish-hpb</machine>
+      <machine maxCpus='288'>pc-q35-5.2</machine>
+      <machine maxCpus='288'>pc-q35-lunar-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-mantic</machine>
+      <machine maxCpus='255'>pc-i440fx-2.12</machine>
+      <machine maxCpus='255' deprecated='yes'>pc-i440fx-2.0</machine>
+      <machine maxCpus='255'>pc-i440fx-xenial</machine>
+      <machine maxCpus='288'>pc-q35-kinetic</machine>
+      <machine maxCpus='255'>pc-i440fx-6.2</machine>
+      <machine maxCpus='288'>pc-q35-4.2</machine>
+      <machine maxCpus='255'>pc-i440fx-mantic-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-2.5</machine>
+      <machine maxCpus='255'>pc-i440fx-4.2</machine>
+      <machine maxCpus='255'>pc-i440fx-focal</machine>
+      <machine maxCpus='255'>pc-i440fx-hirsute</machine>
+      <machine maxCpus='255'>pc-q35-xenial</machine>
+      <machine maxCpus='255'>pc-i440fx-jammy-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-5.2</machine>
+      <machine maxCpus='255'>pc-q35-2.7</machine>
+      <machine maxCpus='288'>pc-q35-eoan-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-disco-hpb</machine>
+      <machine maxCpus='288'>pc-q35-groovy</machine>
+      <machine maxCpus='255'>pc-i440fx-zesty</machine>
+      <machine maxCpus='288'>pc-q35-lunar</machine>
+      <machine maxCpus='1024'>pc-q35-mantic-hpb-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-groovy</machine>
+      <machine maxCpus='288'>pc-q35-7.1</machine>
+      <machine maxCpus='288'>pc-q35-artful</machine>
+      <machine maxCpus='255' deprecated='yes'>pc-i440fx-trusty</machine>
+      <machine maxCpus='255' deprecated='yes'>pc-i440fx-2.2</machine>
+      <machine maxCpus='255'>pc-i440fx-eoan-hpb</machine>
+      <machine maxCpus='288'>pc-q35-focal-hpb</machine>
+      <machine maxCpus='1024'>pc-q35-8.1</machine>
+      <machine maxCpus='1024'>pc-q35-jammy-maxcpus</machine>
+      <machine maxCpus='288'>pc-q35-bionic-hpb</machine>
+      <machine maxCpus='288'>pc-q35-mantic-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-artful</machine>
+      <machine maxCpus='255'>pc-i440fx-8.1</machine>
+      <machine maxCpus='255'>pc-i440fx-2.7</machine>
+      <machine maxCpus='288'>pc-q35-6.1</machine>
+      <machine maxCpus='255'>pc-i440fx-kinetic</machine>
+      <machine maxCpus='1024'>pc-i440fx-jammy-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-yakkety</machine>
+      <machine maxCpus='255'>pc-q35-2.4</machine>
+      <machine maxCpus='288'>pc-q35-cosmic-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-7.1</machine>
+      <machine maxCpus='288'>pc-q35-2.10</machine>
+      <machine maxCpus='1'>x-remote</machine>
+      <machine maxCpus='288'>pc-q35-5.1</machine>
+      <machine maxCpus='288'>pc-q35-2.9</machine>
+      <machine maxCpus='255'>pc-i440fx-2.11</machine>
+      <machine maxCpus='255'>pc-i440fx-jammy-hpb-maxcpus</machine>
+      <machine maxCpus='288'>pc-q35-3.1</machine>
+      <machine maxCpus='255'>pc-i440fx-6.1</machine>
+      <machine maxCpus='288'>pc-q35-4.1</machine>
+      <machine maxCpus='288'>pc-q35-jammy</machine>
+      <machine maxCpus='255'>pc-i440fx-2.4</machine>
+      <machine maxCpus='255'>pc-i440fx-4.1</machine>
+      <machine maxCpus='288'>pc-q35-eoan</machine>
+      <machine maxCpus='288'>pc-q35-jammy-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-5.1</machine>
+      <machine maxCpus='255'>pc-i440fx-2.9</machine>
+      <machine maxCpus='255'>pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-lunar</machine>
+      <machine maxCpus='1'>isapc</machine>
+      <machine maxCpus='255'>pc-i440fx-mantic-hpb</machine>
+      <machine maxCpus='288'>pc-q35-cosmic</machine>
+      <machine maxCpus='255'>pc-q35-2.6</machine>
+      <machine maxCpus='1024'>pc-q35-mantic-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-3.1</machine>
+      <machine maxCpus='288'>pc-q35-bionic</machine>
+      <machine maxCpus='288'>pc-q35-disco-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-cosmic</machine>
+      <machine maxCpus='288'>pc-q35-2.12</machine>
+      <machine maxCpus='255'>pc-i440fx-bionic</machine>
+      <machine maxCpus='288'>pc-q35-kinetic-hpb</machine>
+      <machine maxCpus='288'>pc-q35-groovy-hpb</machine>
+      <machine maxCpus='288'>pc-q35-7.0</machine>
+      <machine maxCpus='255'>pc-i440fx-lunar-hpb</machine>
+      <machine maxCpus='288'>pc-q35-disco</machine>
+      <machine maxCpus='255'>pc-i440fx-cosmic-hpb</machine>
+      <machine maxCpus='1024'>pc-q35-noble</machine>
+      <machine canonical='pc-q35-noble' maxCpus='1024'>ubuntu-q35</machine>
+      <machine maxCpus='255' deprecated='yes'>pc-i440fx-2.1</machine>
+      <machine maxCpus='288'>pc-q35-8.0</machine>
+      <machine maxCpus='288'>pc-q35-impish</machine>
+      <machine maxCpus='255'>pc-i440fx-wily</machine>
+      <machine maxCpus='255'>pc-i440fx-8.0</machine>
+      <machine maxCpus='255'>pc-i440fx-2.6</machine>
+      <machine maxCpus='288'>pc-q35-6.0</machine>
+      <machine maxCpus='255'>pc-i440fx-impish</machine>
+      <machine maxCpus='255'>pc-i440fx-jammy</machine>
+      <machine maxCpus='288'>pc-q35-impish-hpb</machine>
+      <machine maxCpus='288'>pc-q35-hirsute</machine>
+      <machine maxCpus='288'>pc-q35-4.0.1</machine>
+      <machine maxCpus='288'>pc-q35-hirsute-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-7.0</machine>
+      <machine maxCpus='288'>pc-q35-5.0</machine>
+      <machine maxCpus='288'>pc-q35-2.8</machine>
+      <machine maxCpus='255'>pc-i440fx-2.10</machine>
+      <machine maxCpus='288'>pc-q35-3.0</machine>
+      <machine maxCpus='255'>pc-i440fx-6.0</machine>
+      <machine maxCpus='288'>pc-q35-zesty</machine>
+      <machine maxCpus='288'>pc-q35-7.2</machine>
+      <machine maxCpus='288'>pc-q35-4.0</machine>
+      <machine maxCpus='288'>pc-q35-focal</machine>
+      <machine maxCpus='288'>microvm</machine>
+      <machine maxCpus='255' deprecated='yes'>pc-i440fx-2.3</machine>
+      <machine maxCpus='1024'>pc-q35-jammy-hpb-maxcpus</machine>
+      <machine maxCpus='1024'>pc-q35-8.2</machine>
+      <machine canonical='pc-q35-8.2' maxCpus='1024'>q35</machine>
+      <machine maxCpus='255'>pc-i440fx-kinetic-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-focal-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-4.0</machine>
+      <machine maxCpus='255'>pc-i440fx-disco</machine>
+      <machine maxCpus='255'>pc-i440fx-groovy-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-8.2</machine>
+      <machine canonical='pc-i440fx-8.2' maxCpus='255'>pc</machine>
+      <machine maxCpus='255'>pc-i440fx-hirsute-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-5.0</machine>
+      <machine maxCpus='288'>pc-q35-6.2</machine>
+      <machine maxCpus='255'>pc-i440fx-2.8</machine>
+      <machine maxCpus='255'>pc-i440fx-eoan</machine>
+      <machine maxCpus='255'>pc-q35-2.5</machine>
+      <machine maxCpus='255'>pc-i440fx-3.0</machine>
+      <machine maxCpus='255'>pc-q35-yakkety</machine>
+      <machine maxCpus='255'>pc-i440fx-mantic-hpb-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-7.2</machine>
+      <machine maxCpus='288'>pc-q35-2.11</machine>
+      <domain type='qemu'/>
+      <domain type='kvm'/>
+    </arch>
+    <features>
+      <pae/>
+      <nonpae/>
+      <acpi default='on' toggle='yes'/>
+      <apic default='on' toggle='no'/>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='m68k'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-m68k</emulator>
+      <machine maxCpus='1'>mcf5208evb</machine>
+      <machine maxCpus='1'>virt-7.0</machine>
+      <machine maxCpus='1'>an5206</machine>
+      <machine maxCpus='1'>virt-6.0</machine>
+      <machine maxCpus='1'>q800</machine>
+      <machine maxCpus='1'>virt-8.1</machine>
+      <machine maxCpus='1'>virt-7.2</machine>
+      <machine maxCpus='1'>virt-6.2</machine>
+      <machine maxCpus='1'>virt-8.0</machine>
+      <machine maxCpus='1'>next-cube</machine>
+      <machine maxCpus='1'>virt-7.1</machine>
+      <machine maxCpus='1'>virt-6.1</machine>
+      <machine maxCpus='1'>virt-8.2</machine>
+      <machine canonical='virt-8.2' maxCpus='1'>virt</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='microblaze'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-microblaze</emulator>
+      <machine maxCpus='1'>petalogix-s3adsp1800</machine>
+      <machine maxCpus='1'>petalogix-ml605</machine>
+      <machine maxCpus='1'>xlnx-zynqmp-pmu</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='microblazeel'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-microblazeel</emulator>
+      <machine maxCpus='1'>petalogix-s3adsp1800</machine>
+      <machine maxCpus='1'>petalogix-ml605</machine>
+      <machine maxCpus='1'>xlnx-zynqmp-pmu</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='mips'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-mips</emulator>
+      <machine maxCpus='16'>malta</machine>
+      <machine maxCpus='1'>mipssim</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='mipsel'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-mipsel</emulator>
+      <machine maxCpus='16'>malta</machine>
+      <machine maxCpus='1'>mipssim</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='mips64'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-mips64</emulator>
+      <machine maxCpus='16'>malta</machine>
+      <machine maxCpus='1'>mipssim</machine>
+      <machine maxCpus='1'>pica61</machine>
+      <machine maxCpus='1'>magnum</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='mips64el'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-mips64el</emulator>
+      <machine maxCpus='16'>malta</machine>
+      <machine maxCpus='16'>loongson3-virt</machine>
+      <machine maxCpus='1'>mipssim</machine>
+      <machine maxCpus='1'>pica61</machine>
+      <machine maxCpus='1'>magnum</machine>
+      <machine maxCpus='16'>boston</machine>
+      <machine maxCpus='1'>fuloong2e</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='ppc'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-ppc</emulator>
+      <machine maxCpus='1'>g3beige</machine>
+      <machine maxCpus='1'>amigaone</machine>
+      <machine maxCpus='1'>virtex-ml507</machine>
+      <machine maxCpus='1'>mac99</machine>
+      <machine maxCpus='32'>ppce500</machine>
+      <machine maxCpus='1'>sam460ex</machine>
+      <machine maxCpus='1'>pegasos2</machine>
+      <machine maxCpus='1'>bamboo</machine>
+      <machine maxCpus='1'>40p</machine>
+      <machine maxCpus='1'>ref405ep</machine>
+      <machine maxCpus='15'>mpc8544ds</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='ppc64'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-ppc64</emulator>
+      <machine maxCpus='4096'>pseries-noble</machine>
+      <machine canonical='pseries-noble' maxCpus='4096'>pseries</machine>
+      <machine maxCpus='1'>amigaone</machine>
+      <machine maxCpus='2048'>powernv9</machine>
+      <machine canonical='powernv9' maxCpus='2048'>powernv</machine>
+      <machine maxCpus='4096'>pseries-4.1</machine>
+      <machine maxCpus='15'>mpc8544ds</machine>
+      <machine maxCpus='4096'>pseries-6.1</machine>
+      <machine maxCpus='4096'>pseries-2.5</machine>
+      <machine maxCpus='2048'>powernv10</machine>
+      <machine maxCpus='4096'>pseries-xenial</machine>
+      <machine maxCpus='4096'>pseries-4.2</machine>
+      <machine maxCpus='4096'>pseries-6.2</machine>
+      <machine maxCpus='4096'>pseries-yakkety</machine>
+      <machine maxCpus='4096'>pseries-2.6</machine>
+      <machine maxCpus='32'>ppce500</machine>
+      <machine maxCpus='4096'>pseries-bionic-sxxm</machine>
+      <machine maxCpus='4096'>pseries-2.7</machine>
+      <machine maxCpus='4096'>pseries-3.0</machine>
+      <machine maxCpus='4096'>pseries-8.0</machine>
+      <machine maxCpus='4096'>pseries-5.0</machine>
+      <machine maxCpus='1'>40p</machine>
+      <machine maxCpus='4096'>pseries-lunar</machine>
+      <machine maxCpus='4096'>pseries-2.8</machine>
+      <machine maxCpus='1'>pegasos2</machine>
+      <machine maxCpus='4096'>pseries-hirsute</machine>
+      <machine maxCpus='4096'>pseries-3.1</machine>
+      <machine maxCpus='4096'>pseries-8.1</machine>
+      <machine maxCpus='4096'>pseries-5.1</machine>
+      <machine maxCpus='4096'>pseries-eoan</machine>
+      <machine maxCpus='4096'>pseries-2.9</machine>
+      <machine maxCpus='4096'>pseries-zesty</machine>
+      <machine maxCpus='1'>bamboo</machine>
+      <machine maxCpus='4096'>pseries-groovy</machine>
+      <machine maxCpus='4096'>pseries-focal</machine>
+      <machine maxCpus='1'>g3beige</machine>
+      <machine maxCpus='4096'>pseries-8.2</machine>
+      <machine maxCpus='4096'>pseries-5.2</machine>
+      <machine maxCpus='4096'>pseries-disco</machine>
+      <machine maxCpus='4096'>pseries-2.12-sxxm</machine>
+      <machine maxCpus='4096'>pseries-mantic</machine>
+      <machine maxCpus='4096'>pseries-kinetic</machine>
+      <machine maxCpus='4096'>pseries-2.10</machine>
+      <machine maxCpus='4096'>pseries-7.0</machine>
+      <machine maxCpus='1'>virtex-ml507</machine>
+      <machine maxCpus='4096'>pseries-2.11</machine>
+      <machine maxCpus='4096'>pseries-2.1</machine>
+      <machine maxCpus='4096'>pseries-7.1</machine>
+      <machine maxCpus='4096'>pseries-cosmic</machine>
+      <machine maxCpus='4096'>pseries-bionic</machine>
+      <machine maxCpus='4096'>pseries-2.12</machine>
+      <machine maxCpus='4096'>pseries-2.2</machine>
+      <machine maxCpus='4096'>pseries-7.2</machine>
+      <machine maxCpus='1'>mac99</machine>
+      <machine maxCpus='4096'>pseries-impish</machine>
+      <machine maxCpus='4096'>pseries-jammy</machine>
+      <machine maxCpus='4096'>pseries-artful</machine>
+      <machine maxCpus='1'>sam460ex</machine>
+      <machine maxCpus='1'>ref405ep</machine>
+      <machine maxCpus='4096'>pseries-2.3</machine>
+      <machine maxCpus='2048'>powernv8</machine>
+      <machine maxCpus='4096'>pseries-4.0</machine>
+      <machine maxCpus='4096'>pseries-6.0</machine>
+      <machine maxCpus='4096'>pseries-2.4</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='ppc64le'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-ppc64le</emulator>
+      <machine maxCpus='4096'>pseries-noble</machine>
+      <machine canonical='pseries-noble' maxCpus='4096'>pseries</machine>
+      <machine maxCpus='1'>amigaone</machine>
+      <machine maxCpus='2048'>powernv9</machine>
+      <machine canonical='powernv9' maxCpus='2048'>powernv</machine>
+      <machine maxCpus='4096'>pseries-4.1</machine>
+      <machine maxCpus='15'>mpc8544ds</machine>
+      <machine maxCpus='4096'>pseries-6.1</machine>
+      <machine maxCpus='4096'>pseries-2.5</machine>
+      <machine maxCpus='2048'>powernv10</machine>
+      <machine maxCpus='4096'>pseries-xenial</machine>
+      <machine maxCpus='4096'>pseries-4.2</machine>
+      <machine maxCpus='4096'>pseries-6.2</machine>
+      <machine maxCpus='4096'>pseries-yakkety</machine>
+      <machine maxCpus='4096'>pseries-2.6</machine>
+      <machine maxCpus='32'>ppce500</machine>
+      <machine maxCpus='4096'>pseries-bionic-sxxm</machine>
+      <machine maxCpus='4096'>pseries-2.7</machine>
+      <machine maxCpus='4096'>pseries-3.0</machine>
+      <machine maxCpus='4096'>pseries-8.0</machine>
+      <machine maxCpus='4096'>pseries-5.0</machine>
+      <machine maxCpus='1'>40p</machine>
+      <machine maxCpus='4096'>pseries-lunar</machine>
+      <machine maxCpus='4096'>pseries-2.8</machine>
+      <machine maxCpus='1'>pegasos2</machine>
+      <machine maxCpus='4096'>pseries-hirsute</machine>
+      <machine maxCpus='4096'>pseries-3.1</machine>
+      <machine maxCpus='4096'>pseries-8.1</machine>
+      <machine maxCpus='4096'>pseries-5.1</machine>
+      <machine maxCpus='4096'>pseries-eoan</machine>
+      <machine maxCpus='4096'>pseries-2.9</machine>
+      <machine maxCpus='4096'>pseries-zesty</machine>
+      <machine maxCpus='1'>bamboo</machine>
+      <machine maxCpus='4096'>pseries-groovy</machine>
+      <machine maxCpus='4096'>pseries-focal</machine>
+      <machine maxCpus='1'>g3beige</machine>
+      <machine maxCpus='4096'>pseries-8.2</machine>
+      <machine maxCpus='4096'>pseries-5.2</machine>
+      <machine maxCpus='4096'>pseries-disco</machine>
+      <machine maxCpus='4096'>pseries-2.12-sxxm</machine>
+      <machine maxCpus='4096'>pseries-mantic</machine>
+      <machine maxCpus='4096'>pseries-kinetic</machine>
+      <machine maxCpus='4096'>pseries-2.10</machine>
+      <machine maxCpus='4096'>pseries-7.0</machine>
+      <machine maxCpus='1'>virtex-ml507</machine>
+      <machine maxCpus='4096'>pseries-2.11</machine>
+      <machine maxCpus='4096'>pseries-2.1</machine>
+      <machine maxCpus='4096'>pseries-7.1</machine>
+      <machine maxCpus='4096'>pseries-cosmic</machine>
+      <machine maxCpus='4096'>pseries-bionic</machine>
+      <machine maxCpus='4096'>pseries-2.12</machine>
+      <machine maxCpus='4096'>pseries-2.2</machine>
+      <machine maxCpus='4096'>pseries-7.2</machine>
+      <machine maxCpus='1'>mac99</machine>
+      <machine maxCpus='4096'>pseries-impish</machine>
+      <machine maxCpus='4096'>pseries-jammy</machine>
+      <machine maxCpus='4096'>pseries-artful</machine>
+      <machine maxCpus='1'>sam460ex</machine>
+      <machine maxCpus='1'>ref405ep</machine>
+      <machine maxCpus='4096'>pseries-2.3</machine>
+      <machine maxCpus='2048'>powernv8</machine>
+      <machine maxCpus='4096'>pseries-4.0</machine>
+      <machine maxCpus='4096'>pseries-6.0</machine>
+      <machine maxCpus='4096'>pseries-2.4</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='riscv32'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-riscv32</emulator>
+      <machine maxCpus='512'>virt</machine>
+      <machine maxCpus='8'>spike</machine>
+      <machine maxCpus='1'>opentitan</machine>
+      <machine maxCpus='5'>sifive_u</machine>
+      <machine maxCpus='1'>sifive_e</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='riscv64'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-riscv64</emulator>
+      <machine maxCpus='512'>virt</machine>
+      <machine maxCpus='8'>spike</machine>
+      <machine maxCpus='5'>microchip-icicle-kit</machine>
+      <machine maxCpus='5'>sifive_u</machine>
+      <machine maxCpus='1'>shakti_c</machine>
+      <machine maxCpus='1'>sifive_e</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='s390x'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-s390x</emulator>
+      <machine maxCpus='248'>s390-ccw-virtio-noble</machine>
+      <machine canonical='s390-ccw-virtio-noble' maxCpus='248'>s390-ccw-virtio</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-8.0</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-disco</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-6.0</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-2.11</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-7.0</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-mantic</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-xenial</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-5.0</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-focal</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-2.8</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-4.0</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-zesty</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-8.2</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-6.2</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-3.0</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-groovy</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-2.5</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-7.2</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-5.2</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-artful</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-hirsute</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-4.2</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-2.10</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-2.7</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-lunar</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-eoan</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-kinetic</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-8.1</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-yakkety</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-6.1</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-cosmic</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-bionic</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-2.12</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-7.1</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-2.4</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-5.1</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-2.9</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-impish</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-4.1</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-jammy</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-3.1</machine>
+      <machine maxCpus='248'>s390-ccw-virtio-2.6</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='sh4'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-sh4</emulator>
+      <machine maxCpus='1'>shix</machine>
+      <machine maxCpus='1'>r2d</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='sh4eb'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-sh4eb</emulator>
+      <machine maxCpus='1'>shix</machine>
+      <machine maxCpus='1'>r2d</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='sparc'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-sparc</emulator>
+      <machine maxCpus='1'>SS-5</machine>
+      <machine maxCpus='4'>SS-20</machine>
+      <machine maxCpus='1'>LX</machine>
+      <machine maxCpus='1'>SPARCClassic</machine>
+      <machine maxCpus='1'>leon3_generic</machine>
+      <machine maxCpus='1'>SPARCbook</machine>
+      <machine maxCpus='1'>SS-4</machine>
+      <machine maxCpus='4'>SS-600MP</machine>
+      <machine maxCpus='4'>SS-10</machine>
+      <machine maxCpus='1'>Voyager</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='sparc64'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-sparc64</emulator>
+      <machine maxCpus='1'>sun4u</machine>
+      <machine maxCpus='1'>niagara</machine>
+      <machine maxCpus='1'>sun4v</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='x86_64'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      <machine maxCpus='255'>pc-i440fx-noble</machine>
+      <machine canonical='pc-i440fx-noble' maxCpus='255'>ubuntu</machine>
+      <machine maxCpus='288'>pc-q35-mantic</machine>
+      <machine maxCpus='255'>pc-i440fx-impish-hpb</machine>
+      <machine maxCpus='288'>pc-q35-5.2</machine>
+      <machine maxCpus='288'>pc-q35-lunar-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-mantic</machine>
+      <machine maxCpus='255'>pc-i440fx-2.12</machine>
+      <machine maxCpus='255' deprecated='yes'>pc-i440fx-2.0</machine>
+      <machine maxCpus='255'>pc-i440fx-xenial</machine>
+      <machine maxCpus='288'>pc-q35-kinetic</machine>
+      <machine maxCpus='255'>pc-i440fx-6.2</machine>
+      <machine maxCpus='288'>pc-q35-4.2</machine>
+      <machine maxCpus='255'>pc-i440fx-mantic-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-2.5</machine>
+      <machine maxCpus='255'>pc-i440fx-4.2</machine>
+      <machine maxCpus='255'>pc-i440fx-focal</machine>
+      <machine maxCpus='255'>pc-i440fx-hirsute</machine>
+      <machine maxCpus='255'>pc-q35-xenial</machine>
+      <machine maxCpus='255'>pc-i440fx-jammy-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-5.2</machine>
+      <machine maxCpus='255'>pc-q35-2.7</machine>
+      <machine maxCpus='288'>pc-q35-eoan-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-zesty</machine>
+      <machine maxCpus='288'>pc-q35-groovy</machine>
+      <machine maxCpus='255'>pc-i440fx-disco-hpb</machine>
+      <machine maxCpus='288'>pc-q35-lunar</machine>
+      <machine maxCpus='1024'>pc-q35-mantic-hpb-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-groovy</machine>
+      <machine maxCpus='288'>pc-q35-7.1</machine>
+      <machine maxCpus='288'>pc-q35-artful</machine>
+      <machine maxCpus='255' deprecated='yes'>pc-i440fx-trusty</machine>
+      <machine maxCpus='255' deprecated='yes'>pc-i440fx-2.2</machine>
+      <machine maxCpus='288'>pc-q35-focal-hpb</machine>
+      <machine maxCpus='1024'>pc-q35-8.1</machine>
+      <machine maxCpus='255'>pc-i440fx-eoan-hpb</machine>
+      <machine maxCpus='1024'>pc-q35-jammy-maxcpus</machine>
+      <machine maxCpus='288'>pc-q35-bionic-hpb</machine>
+      <machine maxCpus='288'>pc-q35-mantic-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-artful</machine>
+      <machine maxCpus='255'>pc-i440fx-8.1</machine>
+      <machine maxCpus='255'>pc-i440fx-2.7</machine>
+      <machine maxCpus='288'>pc-q35-6.1</machine>
+      <machine maxCpus='255'>pc-i440fx-kinetic</machine>
+      <machine maxCpus='1024'>pc-i440fx-jammy-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-yakkety</machine>
+      <machine maxCpus='255'>pc-q35-2.4</machine>
+      <machine maxCpus='288'>pc-q35-cosmic-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-7.1</machine>
+      <machine maxCpus='288'>pc-q35-2.10</machine>
+      <machine maxCpus='1'>x-remote</machine>
+      <machine maxCpus='288'>pc-q35-5.1</machine>
+      <machine maxCpus='288'>pc-q35-2.9</machine>
+      <machine maxCpus='255'>pc-i440fx-2.11</machine>
+      <machine maxCpus='255'>pc-i440fx-jammy-hpb-maxcpus</machine>
+      <machine maxCpus='288'>pc-q35-3.1</machine>
+      <machine maxCpus='255'>pc-i440fx-6.1</machine>
+      <machine maxCpus='288'>pc-q35-4.1</machine>
+      <machine maxCpus='288'>pc-q35-jammy</machine>
+      <machine maxCpus='255'>pc-i440fx-2.4</machine>
+      <machine maxCpus='255'>pc-i440fx-4.1</machine>
+      <machine maxCpus='288'>pc-q35-eoan</machine>
+      <machine maxCpus='288'>pc-q35-jammy-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-5.1</machine>
+      <machine maxCpus='255'>pc-i440fx-2.9</machine>
+      <machine maxCpus='255'>pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-lunar</machine>
+      <machine maxCpus='1'>isapc</machine>
+      <machine maxCpus='255'>pc-i440fx-mantic-hpb</machine>
+      <machine maxCpus='288'>pc-q35-cosmic</machine>
+      <machine maxCpus='255'>pc-q35-2.6</machine>
+      <machine maxCpus='1024'>pc-q35-mantic-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-3.1</machine>
+      <machine maxCpus='288'>pc-q35-bionic</machine>
+      <machine maxCpus='288'>pc-q35-disco-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-cosmic</machine>
+      <machine maxCpus='288'>pc-q35-2.12</machine>
+      <machine maxCpus='255'>pc-i440fx-bionic</machine>
+      <machine maxCpus='288'>pc-q35-kinetic-hpb</machine>
+      <machine maxCpus='288'>pc-q35-groovy-hpb</machine>
+      <machine maxCpus='288'>pc-q35-7.0</machine>
+      <machine maxCpus='255'>pc-i440fx-lunar-hpb</machine>
+      <machine maxCpus='288'>pc-q35-disco</machine>
+      <machine maxCpus='255'>pc-i440fx-cosmic-hpb</machine>
+      <machine maxCpus='255' deprecated='yes'>pc-i440fx-2.1</machine>
+      <machine maxCpus='1024'>pc-q35-noble</machine>
+      <machine canonical='pc-q35-noble' maxCpus='1024'>ubuntu-q35</machine>
+      <machine maxCpus='288'>pc-q35-8.0</machine>
+      <machine maxCpus='255'>pc-i440fx-wily</machine>
+      <machine maxCpus='288'>pc-q35-impish</machine>
+      <machine maxCpus='255'>pc-i440fx-8.0</machine>
+      <machine maxCpus='255'>pc-i440fx-2.6</machine>
+      <machine maxCpus='288'>pc-q35-6.0</machine>
+      <machine maxCpus='255'>pc-i440fx-impish</machine>
+      <machine maxCpus='255'>pc-i440fx-jammy</machine>
+      <machine maxCpus='288'>pc-q35-impish-hpb</machine>
+      <machine maxCpus='288'>pc-q35-hirsute</machine>
+      <machine maxCpus='288'>pc-q35-4.0.1</machine>
+      <machine maxCpus='288'>pc-q35-hirsute-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-7.0</machine>
+      <machine maxCpus='288'>pc-q35-5.0</machine>
+      <machine maxCpus='288'>pc-q35-2.8</machine>
+      <machine maxCpus='255'>pc-i440fx-2.10</machine>
+      <machine maxCpus='288'>pc-q35-3.0</machine>
+      <machine maxCpus='288'>pc-q35-zesty</machine>
+      <machine maxCpus='288'>pc-q35-7.2</machine>
+      <machine maxCpus='288'>pc-q35-4.0</machine>
+      <machine maxCpus='255'>pc-i440fx-6.0</machine>
+      <machine maxCpus='288'>pc-q35-focal</machine>
+      <machine maxCpus='288'>microvm</machine>
+      <machine maxCpus='255' deprecated='yes'>pc-i440fx-2.3</machine>
+      <machine maxCpus='1024'>pc-q35-jammy-hpb-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-disco</machine>
+      <machine maxCpus='255'>pc-i440fx-kinetic-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-4.0</machine>
+      <machine maxCpus='255'>pc-i440fx-focal-hpb</machine>
+      <machine maxCpus='1024'>pc-q35-8.2</machine>
+      <machine canonical='pc-q35-8.2' maxCpus='1024'>q35</machine>
+      <machine maxCpus='255'>pc-i440fx-groovy-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-hirsute-hpb</machine>
+      <machine maxCpus='255'>pc-i440fx-8.2</machine>
+      <machine canonical='pc-i440fx-8.2' maxCpus='255'>pc</machine>
+      <machine maxCpus='255'>pc-i440fx-5.0</machine>
+      <machine maxCpus='255'>pc-i440fx-2.8</machine>
+      <machine maxCpus='288'>pc-q35-6.2</machine>
+      <machine maxCpus='255'>pc-i440fx-eoan</machine>
+      <machine maxCpus='255'>pc-q35-2.5</machine>
+      <machine maxCpus='255'>pc-i440fx-3.0</machine>
+      <machine maxCpus='255'>pc-q35-yakkety</machine>
+      <machine maxCpus='255'>pc-i440fx-mantic-hpb-maxcpus</machine>
+      <machine maxCpus='255'>pc-i440fx-7.2</machine>
+      <machine maxCpus='288'>pc-q35-2.11</machine>
+      <domain type='qemu'/>
+      <domain type='kvm'/>
+    </arch>
+    <features>
+      <acpi default='on' toggle='yes'/>
+      <apic default='on' toggle='no'/>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='xtensa'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-xtensa</emulator>
+      <machine maxCpus='4'>sim</machine>
+      <machine maxCpus='32'>kc705</machine>
+      <machine maxCpus='32'>ml605</machine>
+      <machine maxCpus='32'>ml605-nommu</machine>
+      <machine maxCpus='32'>virt</machine>
+      <machine maxCpus='32'>lx60-nommu</machine>
+      <machine maxCpus='32'>lx200</machine>
+      <machine maxCpus='32'>lx200-nommu</machine>
+      <machine maxCpus='32'>lx60</machine>
+      <machine maxCpus='32'>kc705-nommu</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='xtensaeb'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-xtensaeb</emulator>
+      <machine maxCpus='4'>sim</machine>
+      <machine maxCpus='32'>kc705</machine>
+      <machine maxCpus='32'>ml605</machine>
+      <machine maxCpus='32'>ml605-nommu</machine>
+      <machine maxCpus='32'>virt</machine>
+      <machine maxCpus='32'>lx60-nommu</machine>
+      <machine maxCpus='32'>lx200</machine>
+      <machine maxCpus='32'>lx200-nommu</machine>
+      <machine maxCpus='32'>lx60</machine>
+      <machine maxCpus='32'>kc705-nommu</machine>
+      <domain type='qemu'/>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default='on' toggle='no'/>
+      <externalSnapshot/>
+    </features>
+  </guest>
+
+</capabilities>
+
+2025-07-27 22:31:35.476 2 INFO nova.virt.libvirt.host [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Secure Boot support detected
+2025-07-27 22:31:36.068 2 INFO nova.virt.node [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Determined node identity aeabab3e-ce97-4ee2-9f4c-74192c1d84bb from /var/lib/nova/compute_id
+2025-07-27 22:31:41.767 2 INFO oslo.privsep.daemon [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Running privsep helper: ['sudo', 'nova-rootwrap', '/etc/nova/rootwrap.conf', 'privsep-helper', '--config-file', '/etc/nova/nova.conf', '--privsep_context', 'vif_plug_ovs.privsep.vif_plug', '--privsep_sock_path', '/tmp/tmpr_z1tzqu/privsep.sock']
+2025-07-27 22:31:42.738 2 INFO oslo.privsep.daemon [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Spawned new privsep daemon via rootwrap
+2025-07-27 22:31:42.601 1121 INFO oslo.privsep.daemon [-] privsep daemon starting
+2025-07-27 22:31:42.606 1121 INFO oslo.privsep.daemon [-] privsep process running with uid/gid: 0/0
+2025-07-27 22:31:42.608 1121 INFO oslo.privsep.daemon [-] privsep process running with capabilities (eff/prm/inh): CAP_DAC_OVERRIDE|CAP_NET_ADMIN/CAP_DAC_OVERRIDE|CAP_NET_ADMIN/none
+2025-07-27 22:31:42.609 1121 INFO oslo.privsep.daemon [-] privsep daemon running as pid 1121
+2025-07-27 22:31:43.106 2 INFO os_vif [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Successfully plugged vif VIFOpenVSwitch(active=False,address=fa:16:3e:e7:5e:13,bridge_name='br-int',has_traffic_filtering=True,id=25882a67-7e23-4831-ac14-ef600cda4166,network=Network(2dc0d1b4-5126-4b82-98bc-fd39ebfeb73c),plugin='ovs',port_profile=VIFPortProfileOpenVSwitch,preserve_on_delete=True,vif_name='tap25882a67-7e')
+2025-07-27 22:31:43.121 2 INFO os_vif [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Successfully plugged vif VIFOpenVSwitch(active=False,address=fa:16:3e:b6:16:06,bridge_name='br-int',has_traffic_filtering=True,id=6f503f4a-d47d-44b8-98c7-0bc1681693d1,network=Network(2dc0d1b4-5126-4b82-98bc-fd39ebfeb73c),plugin='ovs',port_profile=VIFPortProfileOpenVSwitch,preserve_on_delete=True,vif_name='tap6f503f4a-d4')
+2025-07-27 22:31:43.136 2 INFO os_vif [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Successfully plugged vif VIFOpenVSwitch(active=False,address=fa:16:3e:f9:38:43,bridge_name='br-int',has_traffic_filtering=True,id=8ff8af91-48e5-4a92-805b-7268bbb7f276,network=Network(2dc0d1b4-5126-4b82-98bc-fd39ebfeb73c),plugin='ovs',port_profile=VIFPortProfileOpenVSwitch,preserve_on_delete=True,vif_name='tap8ff8af91-48')
+2025-07-27 22:31:43.149 2 INFO os_vif [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Successfully plugged vif VIFOpenVSwitch(active=False,address=fa:16:3e:0c:98:e8,bridge_name='br-int',has_traffic_filtering=True,id=7e97e94a-e20b-4140-9703-554a479af44a,network=Network(2dc0d1b4-5126-4b82-98bc-fd39ebfeb73c),plugin='ovs',port_profile=VIFPortProfileOpenVSwitch,preserve_on_delete=True,vif_name='tap7e97e94a-e2')
+2025-07-27 22:31:43.153 2 INFO nova.compute.manager [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] Looking for unclaimed instances stuck in BUILDING status for nodes managed by this host
+2025-07-27 22:31:53.743 2 INFO nova.virt.libvirt.host [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] kernel doesn't support AMD SEV
+2025-07-27 22:31:55.378 2 INFO oslo.messaging._drivers.impl_rabbit [None req-f54233db-57ac-49ce-a4ef-f2b4622e33ab - - - - - -] [ac5fb492-0bd3-49c6-9fb1-709e8884fac1] Stream Queue.declare: compute_fanout after offset last
+2025-07-27 23:11:23.908 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 23:11:23.911 2 INFO oslo.privsep.daemon [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Running privsep helper: ['sudo', 'nova-rootwrap', '/etc/nova/rootwrap.conf', 'privsep-helper', '--config-file', '/etc/nova/nova.conf', '--privsep_context', 'nova.privsep.sys_admin_pctxt', '--privsep_sock_path', '/tmp/tmppqsvqk_f/privsep.sock']
+2025-07-27 23:11:24.825 2 INFO oslo.privsep.daemon [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Spawned new privsep daemon via rootwrap
+2025-07-27 23:11:24.697 3273 INFO oslo.privsep.daemon [-] privsep daemon starting
+2025-07-27 23:11:24.701 3273 INFO oslo.privsep.daemon [-] privsep process running with uid/gid: 0/0
+2025-07-27 23:11:24.704 3273 INFO oslo.privsep.daemon [-] privsep process running with capabilities (eff/prm/inh): CAP_CHOWN|CAP_DAC_OVERRIDE|CAP_DAC_READ_SEARCH|CAP_FOWNER|CAP_NET_ADMIN|CAP_SYS_ADMIN/CAP_CHOWN|CAP_DAC_OVERRIDE|CAP_DAC_READ_SEARCH|CAP_FOWNER|CAP_NET_ADMIN|CAP_SYS_ADMIN/none
+2025-07-27 23:11:24.704 3273 INFO oslo.privsep.daemon [-] privsep daemon running as pid 3273
+2025-07-27 23:11:24.925 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-27 23:52:58.820 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-27 23:52:58.823 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 00:34:18.909 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 00:34:18.913 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 01:14:26.907 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 01:14:26.909 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 01:55:50.907 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 01:55:50.910 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 02:37:42.710 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 02:37:42.712 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 03:18:31.152 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 03:18:31.154 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 03:59:26.905 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 03:59:26.908 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 04:41:03.910 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 04:41:03.914 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 05:22:42.911 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 05:22:42.914 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 06:04:34.420 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 06:04:34.423 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 06:45:10.498 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 06:45:10.502 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 07:26:48.907 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 07:26:48.910 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 08:08:12.908 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 08:08:12.910 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 08:48:24.022 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 08:48:24.025 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 09:30:04.504 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 09:30:04.507 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 10:10:43.672 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 10:10:43.674 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 10:52:01.906 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 10:52:01.908 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 11:32:22.908 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 11:32:22.911 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 12:12:41.800 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 12:12:41.803 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 12:53:29.184 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 12:53:29.187 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 13:34:33.908 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 13:34:33.911 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 14:16:29.907 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 14:16:29.909 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 14:57:50.910 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 14:57:50.913 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 15:39:03.102 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 15:39:03.106 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 16:20:51.907 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 16:20:51.910 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c
+2025-07-28 17:01:40.908 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] image b5c1f0ae-3226-43d2-9c4c-dcbe44a2b12f at (/var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c): checking
+2025-07-28 17:01:40.912 2 INFO nova.virt.libvirt.imagecache [None req-aa1a45b9-cc12-46cb-9826-6e2508700903 - - - - - -] Active base files: /var/lib/nova/instances/_base/1caa97e734b40acc0c48f43a25ebeeb6572f941c

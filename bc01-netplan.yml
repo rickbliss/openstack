@@ -1,0 +1,103 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0-host:
+      match:
+        macaddress: "0c:c4:7a:7c:bc:83"
+      optional: true
+      addresses:
+      - "10.0.51.2/27"
+      nameservers:
+        addresses:
+        - 10.0.51.1
+        search:
+        - localdomain
+      dhcp4: false
+      dhcp6: false
+      set-name: "eth0-host"
+      routes:
+      - to: "default"
+        via: "10.0.51.1"
+    eth1-mgmt:
+      match:
+        macaddress: "9c:69:b4:66:bf:44"
+      optional: true
+      addresses:
+      - "10.0.51.34/27"
+      nameservers:
+        addresses:
+        - 10.0.51.33
+        search:
+        - localdomain
+      dhcp4: false
+      dhcp6: false
+      set-name: "eth1-mgmt"
+      routes:
+      - scope: "link"
+        table: 101
+        to: "10.0.51.32/27"
+      - table: 101
+        to: "192.168.1.0/24"
+        via: "10.0.51.33"
+      - table: 101
+        to: "default"
+        via: "10.0.51.33"
+      routing-policy:
+      - table: 101
+        from: "10.0.51.34/32"
+      wakeonlan: false
+    eth2-ceph:
+      match:
+        macaddress: "9c:69:b4:66:bf:45"
+      optional: true
+      addresses:
+      - "10.0.51.66/27"
+      nameservers:
+        addresses:
+        - 10.0.51.33
+        search:
+        - localdomain
+      dhcp4: false
+      dhcp6: false
+      set-name: "eth2-ceph"
+      wakeonlan: false
+    eth3-tenant:
+      match:
+        macaddress: "9c:69:b4:66:bf:46"
+      dhcp4: false
+      dhcp6: false
+      set-name: "eth3-tenant"
+      wakeonlan: false
+    eth4:
+      match:
+        macaddress: "9c:69:b4:66:bf:47"
+      set-name: "eth4"
+    unused-01-bork:
+      match:
+        macaddress: "0c:c4:7a:7c:bc:82"
+      set-name: "unused-01-bork"
+  bridges:
+    br-provider:
+      interfaces:
+      - eth3-tenant.57
+  vlans:
+    eth1-mgmt.54:
+      addresses:
+      - "10.0.54.2/24"
+      dhcp4: false
+      dhcp6: false
+      id: 54
+      link: "eth1-mgmt"
+    eth1-mgmt.55:
+      addresses:
+      - "10.0.55.2/24"
+      dhcp4: false
+      dhcp6: false
+      id: 55
+      link: "eth1-mgmt"
+    eth3-tenant.57:
+      dhcp4: false
+      dhcp6: false
+      id: 57
+      link: "eth3-tenant"

@@ -1,0 +1,83 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0-host:
+      match:
+        macaddress: "0c:c4:7a:d3:28:82"
+      optional: true
+      addresses:
+      - "10.0.51.5/27"
+      nameservers:
+        addresses:
+        - 10.0.51.1
+        search:
+        - localdomain
+      dhcp4: false
+      dhcp6: false
+      set-name: "eth0-host"
+      routes:
+      - to: "default"
+        via: "10.0.51.1"
+    eth1-mgmt:
+      match:
+        macaddress: "0c:c4:7a:d3:28:83"
+      optional: true
+      addresses:
+      - "10.0.51.38/27"
+      nameservers:
+        addresses:
+        - 10.0.51.33
+        search:
+        - localdomain
+      dhcp4: false
+      dhcp6: false
+      set-name: "eth1-mgmt"
+      routes:
+      - scope: "link"
+        table: 101
+        to: "10.0.51.32/27"
+      - table: 101
+        to: "default"
+        via: "10.0.51.33"
+      routing-policy:
+      - table: 101
+        from: "10.0.51.38/32"
+      wakeonlan: false
+    eth2-ceph:
+      match:
+        macaddress: "0c:c4:7a:d3:28:84"
+      optional: true
+      addresses:
+      - "10.0.51.69/27"
+      nameservers:
+        addresses:
+        - 10.0.51.33
+        search:
+        - localdomain
+      dhcp4: false
+      dhcp6: false
+      set-name: "eth2-ceph"
+      wakeonlan: false
+    eth3-tenant:
+      match:
+        macaddress: "0c:c4:7a:d3:28:85"
+      dhcp4: false
+      dhcp6: false
+      set-name: "eth3-tenant"
+      wakeonlan: false
+  vlans:
+    eth1-mgmt.54:
+      addresses:
+      - "10.0.54.5/24"
+      dhcp4: false
+      dhcp6: false
+      id: 54
+      link: "eth1-mgmt"
+    eth1-mgmt.55:
+      addresses:
+      - "10.0.55.5/24"
+      dhcp4: false
+      dhcp6: false
+      id: 55
+      link: "eth1-mgmt"

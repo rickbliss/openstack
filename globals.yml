@@ -1,10 +1,12 @@
 # ============================================================================
-# BASE CONFIGURATION
+# BASE CONFIGURATION - pip install kolla-ansible==20.1.0
 # ============================================================================
+
 kolla_base_distro: "ubuntu"
 kolla_install_type: "source"
 kolla_container_engine: "podman"
 enable_docker_repo: "no"
+#openstack_release: "2025.1"
 openstack_logging_debug: "False"
 kolla_force_reconfigure: "yes"
 kolla_enable_debug: "yes"
@@ -53,11 +55,11 @@ syslog_udp_port: "5140"
 # ============================================================================
 enable_openstack_core: "yes"
 enable_cinder: "yes"
-enable_cinder_backup: "yes"
+enable_cinder_backup: "no"
 enable_barbican: "no"
 enable_haproxy: "yes"
 enable_keepalived: "yes"
-enable_redis: "yes"
+enable_redis: "no"
 enable_fluentd: "no"
 enable_hacluster: "no"
 
@@ -192,8 +194,12 @@ ceph_glance_rbd_cache_target_dirty: "16777216"
 # CEPH MANILA CONFIGURATION
 # ============================================================================
 enable_manila: "yes"
+# Enable both protocols
+enable_manila_backend_cephfs_nfs: "yes"
+manila_enabled_share_protocols: "CEPHFS,NFS"
 manila_backend_cephfs_native: "yes"
-
+## SET BELOW TEMP -RB jul-24
+driver_handles_share_servers: "False"
 # Use the CephFS native driver (no share server management)
 manila_cephfs_native_backend_driver: "cephfs"
 manila_cephfs_native_share_backend_name: "cephfs_hdd"
